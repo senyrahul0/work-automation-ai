@@ -134,18 +134,6 @@
         .profile-card .title { color: var(--secondary); font-weight: 700; margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
         .profile-stats { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; }
 
-        /* Page Containers */
-        .page-container { display: none; padding-top: 100px; min-height: 100vh; }
-        .page-content { max-width: 900px; margin: 0 auto; padding: 0 2rem 80px; }
-        .page-header { text-align: center; margin-bottom: 3rem; }
-        .page-title { font-size: clamp(2.5rem, 6vw, 3.5rem); margin-bottom: 1rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .page-description { color: var(--gray); font-size: 1.1rem; line-height: 1.8; }
-        .content-section { margin-bottom: 3rem; }
-        .content-section h2 { font-size: 1.8rem; margin-bottom: 1.5rem; color: white; }
-        .content-section p { color: var(--gray); margin-bottom: 1rem; line-height: 1.8; font-size: 1rem; }
-        .content-section ul, .content-section ol { color: var(--gray); margin-left: 2rem; margin-bottom: 1.5rem; }
-        .content-section li { margin-bottom: 0.75rem; line-height: 1.8; }
-
         /* CTA */
         .cta-section { background: var(--gradient-primary); border-radius: var(--border-radius-lg); padding: 4rem 2rem; text-align: center; position: relative; overflow: hidden; }
         .cta-section::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E"); opacity: 0.3; }
@@ -187,7 +175,7 @@
         .case-study-result .number { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
         .case-study-result .label { font-size: 0.8rem; color: var(--gray); }
         
-        /* Form Styles for Booking */
+        /* Form Styles */
         .booking-form { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
         .form-group { text-align: left; }
         .form-label { display: block; margin-bottom: 0.5rem; color: var(--light); font-weight: 500; font-size: 0.95rem; }
@@ -562,6 +550,86 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="case-study-item">
+                    <h4>Predictive Maintenance Implementation</h4>
+                    <div class="case-study-client">Client: Industrial Machinery Ltd. | Heavy Equipment</div>
+                    <p>AI system that predicts equipment failures 2 weeks in advance, reducing downtime by 75% and maintenance costs by 60%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">75%</div>
+                            <div class="label">Downtime Reduction</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">60%</div>
+                            <div class="label">Maintenance Cost</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">98%</div>
+                            <div class="label">Accuracy Rate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Supply Chain Optimization</h4>
+                    <div class="case-study-client">Client: Global Electronics Corp. | Consumer Electronics</div>
+                    <p>AI-driven inventory management system that reduced stockouts by 85% and optimized warehouse space utilization by 45%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">85%</div>
+                            <div class="label">Stockout Reduction</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">45%</div>
+                            <div class="label">Space Optimization</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">$180K</div>
+                            <div class="label">Inventory Cost Savings</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Production Line Optimization</h4>
+                    <div class="case-study-client">Client: Textile Manufacturing Inc. | Apparel Industry</div>
+                    <p>Real-time AI monitoring system that increased production efficiency by 35% and reduced material waste by 28%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">35%</div>
+                            <div class="label">Efficiency Increase</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">28%</div>
+                            <div class="label">Waste Reduction</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">65%</div>
+                            <div class="label">Energy Savings</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Quality Assurance Automation</h4>
+                    <div class="case-study-client">Client: Food Processing Plant | FMCG Sector</div>
+                    <p>Automated quality monitoring system that improved compliance by 95% and reduced manual inspection hours by 80%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">95%</div>
+                            <div class="label">Compliance Improvement</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">80%</div>
+                            <div class="label">Manual Hours Saved</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">99.8%</div>
+                            <div class="label">Quality Score</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -575,7 +643,7 @@
             <div class="case-studies-list">
                 <div class="case-study-item">
                     <h4>Patient Appointment Automation</h4>
-                    <div class="case-study-client">Multi-Specialty Hospital | 500+ Beds</div>
+                    <div class="case-study-client">Client: Multi-Specialty Hospital | 500+ Beds</div>
                     <p>AI scheduling system reduced no-show rates by 65% and increased patient satisfaction by 40%.</p>
                     <div class="case-study-results">
                         <div class="case-study-result">
@@ -592,6 +660,86 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="case-study-item">
+                    <h4>Medical Records Digitization</h4>
+                    <div class="case-study-client">Client: Regional Health Center | 200K+ Records</div>
+                    <p>AI-powered OCR system digitized 200,000+ records with 99.5% accuracy, saving 3000+ manual hours.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">99.5%</div>
+                            <div class="label">Accuracy Rate</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">3000+</div>
+                            <div class="label">Hours Saved</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">$120K</div>
+                            <div class="label">Annual Savings</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Prescription Automation System</h4>
+                    <div class="case-study-client">Client: Pharmacy Chain | 50+ Locations</div>
+                    <p>AI system automated prescription processing, reducing errors by 95% and processing time by 70%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">95%</div>
+                            <div class="label">Error Reduction</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">70%</div>
+                            <div class="label">Processing Time</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">80%</div>
+                            <div class="label">Patient Wait Time</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Insurance Claim Processing</h4>
+                    <div class="case-study-client">Client: Health Insurance Provider | 1M+ Claims</div>
+                    <p>Automated claim processing system reduced processing time from 14 days to 2 hours with 99% accuracy.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">99%</div>
+                            <div class="label">Accuracy Rate</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">14→2</div>
+                            <div class="label">Days to Hours</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">$500K</div>
+                            <div class="label">Annual Savings</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Telemedicine Platform</h4>
+                    <div class="case-study-client">Client: Healthcare Network | Rural Outreach</div>
+                    <p>AI-powered telemedicine platform increased patient reach by 300% and reduced consultation costs by 60%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">300%</div>
+                            <div class="label">Patient Reach</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">60%</div>
+                            <div class="label">Cost Reduction</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">90%</div>
+                            <div class="label">Patient Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -605,7 +753,7 @@
             <div class="case-studies-list">
                 <div class="case-study-item">
                     <h4>Inventory Prediction AI</h4>
-                    <div class="case-study-client">Fashion Retail Chain | 100+ Stores</div>
+                    <div class="case-study-client">Client: Fashion Retail Chain | 100+ Stores</div>
                     <p>AI system predicted demand with 92% accuracy, reducing overstock by 45% and increasing sales by 28%.</p>
                     <div class="case-study-results">
                         <div class="case-study-result">
@@ -622,6 +770,86 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="case-study-item">
+                    <h4>24/7 Customer Service Bot</h4>
+                    <div class="case-study-client">Client: Online Electronics Store | $50M+ Revenue</div>
+                    <p>AI chatbot handled 85% of customer inquiries, reducing response time from 4 hours to 30 seconds.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">85%</div>
+                            <div class="label">Inquiries Automated</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">4h→30s</div>
+                            <div class="label">Response Time</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">35%</div>
+                            <div class="label">Support Cost Reduction</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Dynamic Pricing Algorithm</h4>
+                    <div class="case-study-client">Client: E-commerce Marketplace | 500K+ Products</div>
+                    <p>AI adjusted prices in real-time based on demand and competition, increasing profit margins by 22%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">22%</div>
+                            <div class="label">Profit Margin Increase</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">40%</div>
+                            <div class="label">Competitive Pricing</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">$1.8M</div>
+                            <div class="label">Additional Annual Revenue</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Personalized Recommendation Engine</h4>
+                    <div class="case-study-client">Client: Home Decor E-commerce | 200K+ Customers</div>
+                    <p>AI recommendation system increased average order value by 35% and customer retention by 40%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">35%</div>
+                            <div class="label">Order Value Increase</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">40%</div>
+                            <div class="label">Customer Retention</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">60%</div>
+                            <div class="label">Click-through Rate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Automated Order Processing</h4>
+                    <div class="case-study-client">Client: Multi-channel Retailer | 10K+ Daily Orders</div>
+                    <p>AI system automated order fulfillment, reducing processing time from 4 hours to 15 minutes per 1000 orders.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">94%</div>
+                            <div class="label">Time Reduction</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">99.9%</div>
+                            <div class="label">Order Accuracy</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">$300K</div>
+                            <div class="label">Annual Labor Savings</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -635,7 +863,7 @@
             <div class="case-studies-list">
                 <div class="case-study-item">
                     <h4>AI Route Optimization</h4>
-                    <div class="case-study-client">National Delivery Service | 5000+ Vehicles</div>
+                    <div class="case-study-client">Client: National Delivery Service | 5000+ Vehicles</div>
                     <p>AI optimized delivery routes in real-time, reducing fuel costs by 25% and improving delivery times by 40%.</p>
                     <div class="case-study-results">
                         <div class="case-study-result">
@@ -652,6 +880,86 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="case-study-item">
+                    <h4>Warehouse Automation System</h4>
+                    <div class="case-study-client">Client: Fulfillment Center | 1M+ sq. ft.</div>
+                    <p>AI-powered warehouse management increased picking efficiency by 60% and reduced errors by 85%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">60%</div>
+                            <div class="label">Picking Efficiency</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">85%</div>
+                            <div class="label">Error Reduction</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">45%</div>
+                            <div class="label">Space Utilization</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Demand Forecasting AI</h4>
+                    <div class="case-study-client">Client: Global Supply Chain | 100+ Countries</div>
+                    <p>AI predicted demand fluctuations with 88% accuracy, reducing stockouts by 70% and excess inventory by 55%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">88%</div>
+                            <div class="label">Forecast Accuracy</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">70%</div>
+                            <div class="label">Stockout Reduction</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">55%</div>
+                            <div class="label">Excess Inventory</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Real-time Tracking System</h4>
+                    <div class="case-study-client">Client: Cold Chain Logistics | Temperature-sensitive Goods</div>
+                    <p>AI monitoring system maintained optimal conditions with 99.8% accuracy and reduced spoilage by 90%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">99.8%</div>
+                            <div class="label">Condition Accuracy</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">90%</div>
+                            <div class="label">Spoilage Reduction</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">$2.1M</div>
+                            <div class="label">Annual Savings</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Automated Documentation Processing</h4>
+                    <div class="case-study-client">Client: International Shipping Company | 50K+ Documents Daily</div>
+                    <p>AI processed shipping documents with 99.5% accuracy, reducing processing time from 15 minutes to 30 seconds per document.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">99.5%</div>
+                            <div class="label">Processing Accuracy</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">15m→30s</div>
+                            <div class="label">Time per Document</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">$850K</div>
+                            <div class="label">Annual Labor Savings</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -665,7 +973,7 @@
             <div class="case-studies-list">
                 <div class="case-study-item">
                     <h4>AI Fraud Detection System</h4>
-                    <div class="case-study-client">National Bank | 10M+ Customers</div>
+                    <div class="case-study-client">Client: National Bank | 10M+ Customers</div>
                     <p>AI detected fraudulent transactions with 95% accuracy, reducing false positives by 80% and preventing $1.2M in fraud monthly.</p>
                     <div class="case-study-results">
                         <div class="case-study-result">
@@ -679,6 +987,86 @@
                         <div class="case-study-result">
                             <div class="number">$1.2M</div>
                             <div class="label">Monthly Fraud Prevention</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Automated Invoice Processing</h4>
+                    <div class="case-study-client">Client: Manufacturing Conglomerate | 100K+ Invoices Monthly</div>
+                    <p>AI processed invoices with 99.7% accuracy, reducing processing time from 5 days to 2 hours and cutting costs by 65%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">99.7%</div>
+                            <div class="label">Processing Accuracy</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">5d→2h</div>
+                            <div class="label">Processing Time</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">65%</div>
+                            <div class="label">Cost Reduction</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Compliance Automation</h4>
+                    <div class="case-study-client">Client: Investment Bank | Regulatory Compliance</div>
+                    <p>AI monitored transactions for compliance violations, reducing manual review time by 75% and increasing detection rate by 90%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">75%</div>
+                            <div class="label">Review Time Reduction</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">90%</div>
+                            <div class="label">Detection Rate Increase</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">$3M</div>
+                            <div class="label">Annual Compliance Savings</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Credit Risk Assessment AI</h4>
+                    <div class="case-study-client">Client: Credit Institution | Loan Portfolio $5B+</div>
+                    <p>AI assessed credit risk with 92% accuracy, reducing default rates by 40% and increasing approval speed by 80%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">92%</div>
+                            <div class="label">Assessment Accuracy</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">40%</div>
+                            <div class="label">Default Rate Reduction</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">80%</div>
+                            <div class="label">Approval Speed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-item">
+                    <h4>Automated Financial Reporting</h4>
+                    <div class="case-study-client">Client: Financial Services Firm | Monthly Reporting</div>
+                    <p>AI generated financial reports automatically, reducing preparation time from 2 weeks to 4 hours with 100% accuracy.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result">
+                            <div class="number">100%</div>
+                            <div class="label">Report Accuracy</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">2w→4h</div>
+                            <div class="label">Preparation Time</div>
+                        </div>
+                        <div class="case-study-result">
+                            <div class="number">85%</div>
+                            <div class="label">Staff Time Saved</div>
                         </div>
                     </div>
                 </div>
