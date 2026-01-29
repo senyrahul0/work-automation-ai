@@ -339,6 +339,102 @@
         .result-number { font-size: 1.8rem; font-weight: 800; color: var(--primary); margin-bottom: 0.3rem; }
         .result-label { color: var(--gray); font-size: 0.85rem; }
 
+        /* Case Studies Grid Section */
+        .case-studies-section {
+            background: rgba(7, 10, 28, 0.7);
+            padding: 80px 0;
+        }
+        
+        .case-studies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .case-study-grid-card {
+            background: rgba(30, 41, 59, 0.6);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .case-study-grid-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0, 102, 255, 0.2);
+        }
+        
+        .case-study-grid-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            background: rgba(0, 102, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .case-study-grid-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+        
+        .case-study-grid-industry {
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            background: rgba(0, 214, 143, 0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+        }
+        
+        .case-study-grid-description {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            flex-grow: 1;
+        }
+        
+        .case-study-grid-results {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .grid-result-box {
+            flex: 1;
+            min-width: 120px;
+            background: rgba(0, 102, 255, 0.08);
+            border: 1px solid rgba(0, 102, 255, 0.15);
+            border-radius: 12px;
+            padding: 0.8rem;
+            text-align: center;
+        }
+        
+        .grid-result-number {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 0.2rem;
+        }
+        
+        .grid-result-label {
+            color: var(--gray);
+            font-size: 0.8rem;
+        }
+
         /* Modal */
         .modal {
             display: none;
@@ -347,7 +443,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(7, 10, 28, 0.95);
+            background: rgba(7, 10, 28, 0.98);
             z-index: 2000;
             align-items: center;
             justify-content: center;
@@ -365,6 +461,8 @@
             width: 100%;
             position: relative;
             border: 1px solid rgba(255, 255, 255, 0.1);
+            max-height: 90vh;
+            overflow-y: auto;
         }
 
         .modal-close {
@@ -381,6 +479,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 2001;
         }
 
         .modal-close:hover { color: white; }
@@ -528,6 +627,7 @@
             .about { grid-template-columns: 1fr; gap: 2rem; }
             .contact-options { flex-direction: column; align-items: center; }
             .contact-options .btn { width: 100%; max-width: 300px; }
+            .case-studies-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
@@ -549,6 +649,9 @@
             .doc-panel { width: 100%; }
             .doc-btn { width: 45px; height: 45px; }
             .mobile-back-btn { display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+            .case-studies-grid { grid-template-columns: 1fr; }
+            .case-study-grid-results { flex-direction: column; }
+            .grid-result-box { min-width: 100%; }
         }
 
         @media (max-width: 480px) {
@@ -562,6 +665,7 @@
             .case-study-header { flex-direction: column; text-align: center; }
             .doc-btn { bottom: 1rem; right: 1rem; }
             .mobile-back-btn { width: 90%; }
+            .case-study-grid-card { padding: 1.5rem; }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -578,6 +682,7 @@
             </a>
             <div class="nav-menu">
                 <a class="nav-link" onclick="scrollToSection('industries')">Solutions</a>
+                <a class="nav-link" onclick="scrollToSection('case-studies-section')">Case Studies</a>
                 <a class="nav-link" onclick="scrollToSection('about-expert')">Expert</a>
                 <a class="nav-link" onclick="scrollToSection('contact')">Contact</a>
             </div>
@@ -600,7 +705,7 @@
                 <h1 class="hero-title">Automate Your Business Operations with AI</h1>
                 <p class="hero-subtitle">WorkAutoAI delivers intelligent automation solutions that save 40+ hours weekly, reduce operational costs by 60%, and scale your business exponentially.</p>
                 <div class="hero-buttons">
-                    <a class="btn btn-primary btn-large" onclick="scrollToSection('industries')"><i class="fas fa-play-circle"></i> Explore Solutions</a>
+                    <a class="btn btn-primary btn-large" onclick="scrollToSection('case-studies-section')"><i class="fas fa-play-circle"></i> See Case Studies</a>
                     <button onclick="openBookingModal()" class="btn btn-success btn-large"><i class="fas fa-calendar-check"></i> Free Consultation</button>
                 </div>
                 <div class="hero-stats">
@@ -608,6 +713,157 @@
                     <div class="stat"><div class="stat-number">60%</div><div class="stat-label">Cost Reduction</div></div>
                     <div class="stat"><div class="stat-number">100%</div><div class="stat-label">Accuracy Rate</div></div>
                     <div class="stat"><div class="stat-number">24/7</div><div class="stat-label">Automation</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies-section" class="case-studies-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">PROVEN RESULTS</div>
+                <h2 class="section-title">6 Real-World AI Automation Success Stories</h2>
+                <p class="section-description">See how businesses across industries achieved remarkable results with our custom AI automation solutions.</p>
+            </div>
+            
+            <div class="case-studies-grid">
+                <!-- Case Study 1 -->
+                <div class="case-study-grid-card">
+                    <div class="case-study-grid-icon"><i class="fas fa-industry"></i></div>
+                    <span class="case-study-grid-industry">Manufacturing</span>
+                    <h3>Die Casting Quality Control Automation</h3>
+                    <p class="case-study-grid-description">Automated visual inspection system for automotive die-cast parts, replacing manual QC that missed 15% of defects.</p>
+                    <div class="case-study-grid-results">
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">95%</div>
+                            <div class="grid-result-label">Time Saved</div>
+                        </div>
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">92%</div>
+                            <div class="grid-result-label">Defect Detection</div>
+                        </div>
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">₹45L</div>
+                            <div class="grid-result-label">Annual Savings</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="openModal('manufacturing')">View Details</button>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="case-study-grid-card">
+                    <div class="case-study-grid-icon"><i class="fas fa-hospital"></i></div>
+                    <span class="case-study-grid-industry">Healthcare</span>
+                    <h3>Smart Appointment & Billing System</h3>
+                    <p class="case-study-grid-description">AI scheduling with automated reminders reduced no-shows by 40% and automated medical billing with 89% error reduction.</p>
+                    <div class="case-study-grid-results">
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">40%</div>
+                            <div class="grid-result-label">No-show ↓</div>
+                        </div>
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">89%</div>
+                            <div class="grid-result-label">Error Reduction</div>
+                        </div>
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">₹7.2Cr</div>
+                            <div class="grid-result-label">Revenue Gain</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="openModal('healthcare')">View Details</button>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="case-study-grid-card">
+                    <div class="case-study-grid-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <span class="case-study-grid-industry">Retail</span>
+                    <h3>AI Inventory & Customer Service</h3>
+                    <p class="case-study-grid-description">ML demand forecasting reduced stockouts by 85% and AI chatbot automated 78% of customer queries 24/7.</p>
+                    <div class="case-study-grid-results">
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">85%</div>
+                            <div class="grid-result-label">Stockout ↓</div>
+                        </div>
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">78%</div>
+                            <div class="grid-result-label">Queries Automated</div>
+                        </div>
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">₹3.5Cr</div>
+                            <div class="grid-result-label">Cost Savings</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="openModal('retail')">View Details</button>
+                </div>
+
+                <!-- Case Study 4 -->
+                <div class="case-study-grid-card">
+                    <div class="case-study-grid-icon"><i class="fas fa-shipping-fast"></i></div>
+                    <span class="case-study-grid-industry">Logistics</span>
+                    <h3>Route Optimization & Warehouse AI</h3>
+                    <p class="case-study-grid-description">AI route optimization saved 28% fuel costs and warehouse automation increased throughput by 60%.</p>
+                    <div class="case-study-grid-results">
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">28%</div>
+                            <div class="grid-result-label">Fuel Savings</div>
+                        </div>
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">60%</div>
+                            <div class="grid-result-label">Throughput ↑</div>
+                        </div>
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">₹4.8Cr</div>
+                            <div class="grid-result-label">Annual Savings</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="openModal('logistics')">View Details</button>
+                </div>
+
+                <!-- Case Study 5 -->
+                <div class="case-study-grid-card">
+                    <div class="case-study-grid-icon"><i class="fas fa-chart-line"></i></div>
+                    <span class="case-study-grid-industry">Finance</span>
+                    <h3>AI Fraud Detection System</h3>
+                    <p class="case-study-grid-description">ML-based fraud detection achieved 96% accuracy and reduced false positives by 70%, preventing ₹15Cr in fraud.</p>
+                    <div class="case-study-grid-results">
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">96%</div>
+                            <div class="grid-result-label">Accuracy</div>
+                        </div>
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">70%</div>
+                            <div class="grid-result-label">False Positives ↓</div>
+                        </div>
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">₹15Cr</div>
+                            <div class="grid-result-label">Fraud Prevention</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="openModal('finance')">View Details</button>
+                </div>
+
+                <!-- Case Study 6 -->
+                <div class="case-study-grid-card">
+                    <div class="case-study-grid-icon"><i class="fas fa-robot"></i></div>
+                    <span class="case-study-grid-industry">E-commerce</span>
+                    <h3>AI Chatbot & Inventory Management</h3>
+                    <p class="case-study-grid-description">24/7 AI chatbot automated 80% of customer queries and ML inventory prediction achieved 92% accuracy.</p>
+                    <div class="case-study-grid-results">
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">80%</div>
+                            <div class="grid-result-label">Queries Automated</div>
+                        </div>
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">92%</div>
+                            <div class="grid-result-label">Inventory Accuracy</div>
+                        </div>
+                        <div class="grid-result-box">
+                            <div class="grid-result-number">₹2.4Cr</div>
+                            <div class="grid-result-label">Annual Savings</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="openModal('retail')">View Details</button>
                 </div>
             </div>
         </div>
@@ -680,125 +936,6 @@
                         <li><i class="fas fa-check-circle"></i> Compliance automation</li>
                     </ul>
                     <a class="view-case-study" onclick="openModal('finance')">View Case Studies <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Case Studies Section -->
-    <section id="case-studies" class="section" style="background: rgba(7, 10, 28, 0.7);">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-subtitle">PROVEN RESULTS</div>
-                <h2 class="section-title">Real-World Case Studies</h2>
-                <p class="section-description">See how businesses across industries achieved remarkable results with our AI automation solutions.</p>
-            </div>
-            
-            <div class="case-study-card">
-                <div class="case-study-header">
-                    <div class="case-study-icon"><i class="fas fa-industry"></i></div>
-                    <div class="case-study-info">
-                        <h3>Automotive Parts Manufacturer</h3>
-                        <div class="case-study-client">Tier-1 Supplier | 500+ Employees</div>
-                    </div>
-                </div>
-                <p class="case-study-description"><strong>Challenge:</strong> Manual quality checks causing 15% defect rate and production delays.<br>
-                <strong>Solution:</strong> AI-powered visual inspection system with real-time defect detection.<br>
-                <strong>Impact:</strong> Reduced defects by 92% and increased production speed by 35%.</p>
-                <div class="case-study-results">
-                    <div class="result-box"><div class="result-number">92%</div><div class="result-label">Defect Reduction</div></div>
-                    <div class="result-box"><div class="result-number">35%</div><div class="result-label">Production Speed ↑</div></div>
-                    <div class="result-box"><div class="result-number">₹1.2Cr</div><div class="result-label">Annual Savings</div></div>
-                </div>
-            </div>
-
-            <div class="case-study-card">
-                <div class="case-study-header">
-                    <div class="case-study-icon"><i class="fas fa-hospital"></i></div>
-                    <div class="case-study-info">
-                        <h3>Multi-Specialty Hospital Chain</h3>
-                        <div class="case-study-client">Healthcare | 1000+ Beds</div>
-                    </div>
-                </div>
-                <p class="case-study-description"><strong>Challenge:</strong> Patient no-shows costing ₹60L monthly in lost revenue.<br>
-                <strong>Solution:</strong> AI scheduling system with smart reminders and optimization.<br>
-                <strong>Impact:</strong> Reduced no-shows by 40% and increased patient satisfaction by 65%.</p>
-                <div class="case-study-results">
-                    <div class="result-box"><div class="result-number">40%</div><div class="result-label">No-show Reduction</div></div>
-                    <div class="result-box"><div class="result-number">65%</div><div class="result-label">Satisfaction ↑</div></div>
-                    <div class="result-box"><div class="result-number">₹7.2Cr</div><div class="result-label">Revenue Gain</div></div>
-                </div>
-            </div>
-
-            <div class="case-study-card">
-                <div class="case-study-header">
-                    <div class="case-study-icon"><i class="fas fa-shopping-cart"></i></div>
-                    <div class="case-study-info">
-                        <h3>National Retail Chain</h3>
-                        <div class="case-study-client">Retail | 200+ Stores</div>
-                    </div>
-                </div>
-                <p class="case-study-description"><strong>Challenge:</strong> Inaccurate inventory causing 25% stockouts and overstock.<br>
-                <strong>Solution:</strong> AI demand forecasting and automated inventory management.<br>
-                <strong>Impact:</strong> Reduced stockouts by 85% and improved inventory turnover by 40%.</p>
-                <div class="case-study-results">
-                    <div class="result-box"><div class="result-number">85%</div><div class="result-label">Stockout Reduction</div></div>
-                    <div class="result-box"><div class="result-number">40%</div><div class="result-label">Turnover ↑</div></div>
-                    <div class="result-box"><div class="result-number">₹3.5Cr</div><div class="result-label">Cost Savings</div></div>
-                </div>
-            </div>
-
-            <div class="case-study-card">
-                <div class="case-study-header">
-                    <div class="case-study-icon"><i class="fas fa-shipping-fast"></i></div>
-                    <div class="case-study-info">
-                        <h3>Logistics Company</h3>
-                        <div class="case-study-client">Supply Chain | 5000+ Vehicles</div>
-                    </div>
-                </div>
-                <p class="case-study-description"><strong>Challenge:</strong> Inefficient routing wasting 30% fuel and delivery delays.<br>
-                <strong>Solution:</strong> AI-powered route optimization with real-time traffic updates.<br>
-                <strong>Impact:</strong> Reduced fuel costs by 28% and improved on-time delivery by 45%.</p>
-                <div class="case-study-results">
-                    <div class="result-box"><div class="result-number">28%</div><div class="result-label">Fuel Savings</div></div>
-                    <div class="result-box"><div class="result-number">45%</div><div class="result-label">On-time Delivery ↑</div></div>
-                    <div class="result-box"><div class="result-number">₹4.8Cr</div><div class="result-label">Annual Savings</div></div>
-                </div>
-            </div>
-
-            <div class="case-study-card">
-                <div class="case-study-header">
-                    <div class="case-study-icon"><i class="fas fa-chart-line"></i></div>
-                    <div class="case-study-info">
-                        <h3>Financial Services Firm</h3>
-                        <div class="case-study-client">Banking | 2M+ Customers</div>
-                    </div>
-                </div>
-                <p class="case-study-description"><strong>Challenge:</strong> Manual fraud detection missing 20% of fraudulent transactions.<br>
-                <strong>Solution:</strong> ML-based fraud detection system analyzing transaction patterns.<br>
-                <strong>Impact:</strong> Increased fraud detection by 95% and reduced false positives by 70%.</p>
-                <div class="case-study-results">
-                    <div class="result-box"><div class="result-number">95%</div><div class="result-label">Detection Rate</div></div>
-                    <div class="result-box"><div class="result-number">70%</div><div class="result-label">False Positives ↓</div></div>
-                    <div class="result-box"><div class="result-number">₹15Cr</div><div class="result-label">Fraud Prevention</div></div>
-                </div>
-            </div>
-
-            <div class="case-study-card">
-                <div class="case-study-header">
-                    <div class="case-study-icon"><i class="fas fa-robot"></i></div>
-                    <div class="case-study-info">
-                        <h3>E-commerce Platform</h3>
-                        <div class="case-study-client">Online Retail | 1M+ Products</div>
-                    </div>
-                </div>
-                <p class="case-study-description"><strong>Challenge:</strong> Customer service overwhelmed with 5000+ daily queries.<br>
-                <strong>Solution:</strong> AI chatbot handling 80% of queries with human escalation.<br>
-                <strong>Impact:</strong> Reduced response time from 4 hours to 2 minutes and cut support costs by 60%.</p>
-                <div class="case-study-results">
-                    <div class="result-box"><div class="result-number">80%</div><div class="result-label">Queries Automated</div></div>
-                    <div class="result-box"><div class="result-number">60%</div><div class="result-label">Cost Reduction</div></div>
-                    <div class="result-box"><div class="result-number">₹2.4Cr</div><div class="result-label">Annual Savings</div></div>
                 </div>
             </div>
         </div>
@@ -879,6 +1016,7 @@
                     <h3 class="footer-heading">Company</h3>
                     <ul class="footer-links">
                         <li><a onclick="scrollToSection('industries')">Solutions</a></li>
+                        <li><a onclick="scrollToSection('case-studies-section')">Case Studies</a></li>
                         <li><a onclick="scrollToSection('about-expert')">About</a></li>
                         <li><a onclick="scrollToSection('contact')">Contact</a></li>
                     </ul>
@@ -1152,8 +1290,8 @@
         
         <div class="doc-subtitle">✅ WHAT'S INCLUDED</div>
         <ul class="doc-list">
-            <li>✨ All 3 bugs fixed</li>
-            <li>📊 6 complete case studies</li>
+            <li>✨ All bugs fixed</li>
+            <li>📊 6 complete case studies section</li>
             <li>📱 Mobile back buttons added</li>
             <li>🔍 Form dropdowns fixed</li>
             <li>⚡ Ready for deployment</li>
@@ -1161,27 +1299,27 @@
 
         <div class="doc-subtitle">🐛 BUGS FIXED</div>
         <ul class="doc-list">
-            <li>✅ Form dropdown visibility</li>
-            <li>✅ Mobile back navigation</li>
-            <li>✅ Case study examples added</li>
-            <li>✅ Responsive improvements</li>
-            <li>✅ Color contrast fixes</li>
+            <li>✅ Case studies section added and visible</li>
+            <li>✅ Form dropdown visibility fixed</li>
+            <li>✅ Mobile back navigation added</li>
+            <li>✅ 6 real case studies with metrics</li>
+            <li>✅ Mobile responsive design</li>
         </ul>
 
-        <div class="doc-subtitle">📊 CASE STUDIES ADDED (6 Examples)</div>
-        <p class="doc-text"><strong>1. Automotive Parts Manufacturer:</strong> 92% defect reduction, ₹1.2Cr savings</p>
-        <p class="doc-text"><strong>2. Multi-Specialty Hospital:</strong> 40% no-show reduction, ₹7.2Cr revenue gain</p>
-        <p class="doc-text"><strong>3. National Retail Chain:</strong> 85% stockout reduction, ₹3.5Cr savings</p>
-        <p class="doc-text"><strong>4. Logistics Company:</strong> 28% fuel savings, ₹4.8Cr annual savings</p>
-        <p class="doc-text"><strong>5. Financial Services:</strong> 95% fraud detection, ₹15Cr prevention</p>
-        <p class="doc-text"><strong>6. E-commerce Platform:</strong> 80% queries automated, ₹2.4Cr savings</p>
+        <div class="doc-subtitle">📊 6 CASE STUDIES ADDED</div>
+        <p class="doc-text"><strong>1. Die Casting QC Automation:</strong> 95% time saved, 92% defect detection</p>
+        <p class="doc-text"><strong>2. Smart Healthcare System:</strong> 40% no-show reduction, 89% error reduction</p>
+        <p class="doc-text"><strong>3. Retail AI Inventory:</strong> 85% stockout reduction, 78% queries automated</p>
+        <p class="doc-text"><strong>4. Logistics Optimization:</strong> 28% fuel savings, 60% throughput increase</p>
+        <p class="doc-text"><strong>5. Finance Fraud Detection:</strong> 96% accuracy, ₹15Cr fraud prevention</p>
+        <p class="doc-text"><strong>6. E-commerce AI Chatbot:</strong> 80% queries automated, 92% inventory accuracy</p>
 
         <div class="doc-subtitle">📱 MOBILE FIXES</div>
         <ul class="doc-list">
-            <li>✅ Back button in all modals</li>
-            <li>✅ Form dropdowns visible</li>
-            <li>✅ Better touch targets</li>
-            <li>✅ Improved navigation</li>
+            <li>✅ Back button in all modals (mobile only)</li>
+            <li>✅ Form dropdowns visible on all devices</li>
+            <li>✅ Better touch targets for mobile</li>
+            <li>✅ Improved navigation menu</li>
             <li>✅ Fixed viewport issues</li>
         </ul>
 
@@ -1224,6 +1362,15 @@
         function openModal(id) {
             document.getElementById(id + 'Modal').classList.add('active');
             document.body.style.overflow = 'hidden';
+            
+            // Show mobile back button
+            if (window.innerWidth <= 768) {
+                const modal = document.getElementById(id + 'Modal');
+                const mobileBackBtn = modal.querySelector('.mobile-back-btn');
+                if (mobileBackBtn) {
+                    mobileBackBtn.style.display = 'flex';
+                }
+            }
         }
 
         function closeModal(id) {
@@ -1244,6 +1391,15 @@
         function openBookingModal() {
             document.getElementById('bookingModal').classList.add('active');
             document.body.style.overflow = 'hidden';
+            
+            // Show mobile back button
+            if (window.innerWidth <= 768) {
+                const modal = document.getElementById('bookingModal');
+                const mobileBackBtn = modal.querySelector('.mobile-back-btn');
+                if (mobileBackBtn) {
+                    mobileBackBtn.style.display = 'flex';
+                }
+            }
         }
 
         function closeBookingModal() {
