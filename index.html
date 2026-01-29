@@ -6,29 +6,27 @@
     
     <title>WorkAutoAI | Manufacturing & Business Automation Expert | Rahul Yadav</title>
     <meta name="description" content="Rahul Yadav helps Manufacturing & Logistics businesses save 40+ hours/week using AI & Make.com. Automate QC, Reporting & Operations today. Trusted by 50+ businesses.">
-    <meta name="keywords" content="AI Automation, Manufacturing Automation, Make.com Expert, Rahul Yadav, QC Automation, Die Casting AI, Business Process Automation, Automated Reporting, Logistics AI, RPA Solutions">
+    <meta name="keywords" content="AI Automation, Manufacturing Automation, Make.com Expert, Rahul Yadav, QC Automation, Die Casting AI, Business Process Automation, Automated Reporting, Logistics AI">
     <meta name="author" content="Rahul Yadav">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://workautomation-ai.vercel.app/">
 
     <meta property="og:title" content="WorkAutoAI - Automate Your Factory & Business">
-    <meta property="og:description" content="Stop manual reporting. Get custom AI solutions for Manufacturing, QC, and Operations. Book a free consultation.">
+    <meta property="og:description" content="Stop manual reporting. Get custom AI solutions for Manufacturing, QC, and Operations. Book a free consultation with Rahul Yadav.">
     <meta property="og:image" content="https://workautomation-ai.vercel.app/photos/seo-banner.jpg">
     <meta property="og:url" content="https://workautomation-ai.vercel.app/">
     <meta property="og:type" content="website">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="photos/favicon.png">
-    
+
     <style>
         :root {
             --primary: #0066FF;
             --primary-dark: #0052D4;
-            --primary-light: #3D8FFF;
             --secondary: #00D68F;
             --secondary-dark: #00B87A;
-            --accent: #FF6B6B;
             --dark: #0A0F2B;
             --darker: #070A1C;
             --light: #F8FAFC;
@@ -36,178 +34,162 @@
             --dark-gray: #1E293B;
             --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
             --gradient-secondary: linear-gradient(135deg, #00D68F 0%, #00E6C3 100%);
-            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.12);
-            --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.15);
-            --shadow-lg: 0 16px 32px rgba(0, 0, 0, 0.2);
-            --shadow-xl: 0 25px 50px rgba(0, 102, 255, 0.25);
+            --shadow-xl: 0 25px 50px -12px rgba(0, 102, 255, 0.25);
             --border-radius: 12px;
             --border-radius-lg: 20px;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
-        body { font-family: 'Outfit', sans-serif; background-color: var(--darker); color: var(--light); line-height: 1.6; overflow-x: hidden; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Sora', sans-serif; font-weight: 700; line-height: 1.2; letter-spacing: -0.5px; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--darker); color: var(--light); line-height: 1.6; overflow-x: hidden; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; font-weight: 700; line-height: 1.2; }
         .container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
 
         /* Navigation */
-        .navbar { position: fixed; top: 0; left: 0; width: 100%; padding: 1rem 0; background: rgba(7, 10, 28, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); z-index: 1000; transition: var(--transition); }
+        .navbar { position: fixed; top: 0; left: 0; width: 100%; padding: 1rem 0; background: rgba(7, 10, 28, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); z-index: 1000; transition: all 0.3s ease; }
         .navbar.scrolled { padding: 0.6rem 0; background: rgba(7, 10, 28, 0.98); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; gap: 2rem; }
-        .logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; flex-shrink: 0; }
-        .logo-icon { width: 42px; height: 42px; background: var(--gradient-primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 800; color: white; box-shadow: var(--shadow-xl); }
-        .logo-text { font-size: 1.4rem; font-weight: 800; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .nav-menu { display: flex; gap: 2rem; align-items: center; flex: 1; }
-        .nav-link { color: var(--gray); text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: var(--transition); position: relative; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+        .logo-icon { width: 42px; height: 42px; background: var(--gradient-primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; color: white; box-shadow: var(--shadow-xl); }
+        .logo-text { font-size: 1.5rem; font-weight: 800; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-menu { display: flex; gap: 2rem; align-items: center; }
+        .nav-link { color: var(--gray); text-decoration: none; font-weight: 500; transition: color 0.3s ease; cursor: pointer; }
         .nav-link:hover { color: white; }
-        .nav-link::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--primary); transition: width 0.3s ease; }
-        .nav-link:hover::after { width: 100%; }
-        .nav-cta { display: flex; gap: 1rem; align-items: center; flex-shrink: 0; }
+        .nav-cta { display: flex; gap: 1rem; align-items: center; }
 
         /* Buttons */
-        .btn { padding: 0.7rem 1.5rem; border-radius: var(--border-radius); font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; transition: var(--transition); cursor: pointer; border: none; font-family: 'Outfit', sans-serif; white-space: nowrap; }
-        .btn:active { transform: scale(0.98); }
-        .btn-primary { background: var(--gradient-primary); color: white; box-shadow: 0 8px 16px rgba(0, 102, 255, 0.3); }
+        .btn { padding: 0.7rem 1.5rem; border-radius: var(--border-radius); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; transition: all 0.3s ease; cursor: pointer; border: none; font-family: 'Inter', sans-serif; }
+        .btn-primary { background: var(--gradient-primary); color: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-xl); }
         .btn-secondary { background: transparent; color: white; border: 2px solid rgba(255, 255, 255, 0.2); }
         .btn-secondary:hover { border-color: var(--primary); background: rgba(0, 102, 255, 0.1); }
-        .btn-success { background: var(--gradient-secondary); color: white; box-shadow: 0 8px 16px rgba(0, 214, 143, 0.3); }
-        .btn-success:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(0, 214, 143, 0.4); }
+        .btn-success { background: var(--gradient-secondary); color: white; }
+        .btn-success:hover { transform: translateY(-2px); }
         .btn-whatsapp { background: #25D366; color: white; }
-        .btn-whatsapp:hover { background: #20BA5F; }
         .btn-email { background: white; color: var(--dark); }
-        .btn-email:hover { background: #F0F0F0; }
         .btn-call { background: var(--secondary); color: white; }
-        .btn-call:hover { background: var(--secondary-dark); }
 
         /* Hero */
-        .hero { padding: 160px 0 100px; position: relative; overflow: hidden; }
-        .hero-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 20% 80%, rgba(0, 102, 255, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(0, 214, 143, 0.1) 0%, transparent 50%), radial-gradient(circle at 40% 40%, rgba(255, 107, 107, 0.05) 0%, transparent 50%); z-index: -1; }
-        .hero-content { max-width: 800px; text-align: center; margin: 0 auto; animation: fadeInUp 0.8s ease-out; }
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .hero-badge { display: inline-flex; align-items: center; gap: 0.6rem; background: rgba(0, 214, 143, 0.1); backdrop-filter: blur(10px); padding: 0.65rem 1.25rem; border-radius: 50px; margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--secondary); border: 1px solid rgba(0, 214, 143, 0.3); font-weight: 600; }
-        .hero-title { font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 1.5rem; background: linear-gradient(to right, #FFFFFF, #B8D4FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1.15; }
-        .hero-subtitle { font-size: clamp(1rem, 3vw, 1.25rem); color: var(--gray); margin-bottom: 2.5rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.8; }
-        .hero-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 3rem; }
-        .btn-large { padding: 1rem 2rem; font-size: 1rem; }
-        .hero-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; margin-top: 3rem; }
-        .stat { text-align: center; padding: 1.5rem; background: rgba(255, 255, 255, 0.03); border-radius: var(--border-radius-lg); border: 1px solid rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); transition: var(--transition); }
-        .stat:hover { background: rgba(0, 102, 255, 0.08); border-color: rgba(0, 102, 255, 0.2); transform: translateY(-5px); }
-        .stat-number { font-size: 2rem; font-weight: 800; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem; }
-        .stat-label { color: var(--gray); font-size: 0.85rem; font-weight: 500; }
+        .hero { padding: 160px 0 100px; position: relative; overflow: hidden; text-align: center; }
+        .hero-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 20% 80%, rgba(0, 102, 255, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(0, 214, 143, 0.1) 0%, transparent 50%); z-index: -1; }
+        .hero-title { font-size: 3.5rem; margin-bottom: 1.5rem; background: linear-gradient(to right, #FFFFFF, #B8D4FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-subtitle { font-size: 1.25rem; color: var(--gray); margin-bottom: 2.5rem; max-width: 700px; margin: 0 auto; }
+        .hero-buttons { display: flex; gap: 1rem; justify-content: center; margin-bottom: 3rem; flex-wrap: wrap; }
+        .hero-stats { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-number { font-size: 2.5rem; font-weight: 800; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .stat-label { color: var(--gray); font-size: 0.9rem; }
 
-        /* Section */
-        .section { padding: 80px 0; }
+        /* Industries */
+        .section { padding: 100px 0; }
         .section-header { text-align: center; margin-bottom: 4rem; }
-        .section-subtitle { color: var(--secondary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 1rem; font-size: 0.85rem; }
-        .section-title { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; color: white; }
-        .section-description { color: var(--gray); font-size: 1rem; max-width: 650px; margin: 0 auto; line-height: 1.8; }
-
-        /* Industries Grid */
-        .industries-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; }
-        .industry-card { background: rgba(30, 41, 59, 0.4); border-radius: var(--border-radius-lg); padding: 2.5rem; transition: var(--transition); border: 1px solid rgba(255, 255, 255, 0.08); position: relative; overflow: hidden; display: flex; flex-direction: column; }
-        .industry-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--gradient-primary); opacity: 0; transition: opacity 0.4s ease; z-index: -1; }
-        .industry-card:hover { transform: translateY(-8px); border-color: var(--primary); box-shadow: 0 20px 40px rgba(0, 102, 255, 0.2); }
-        .industry-card:hover::before { opacity: 0.05; }
-        .industry-icon { width: 70px; height: 70px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 1.5rem; background: rgba(0, 102, 255, 0.1); color: var(--primary); transition: var(--transition); }
-        .industry-card:hover .industry-icon { background: rgba(0, 102, 255, 0.2); transform: scale(1.1); }
-        .industry-card h3 { font-size: 1.4rem; margin-bottom: 1rem; color: white; }
-        .industry-card p { color: var(--gray); margin-bottom: 1.5rem; flex-grow: 1; line-height: 1.7; }
-        .industry-features { list-style: none; margin-bottom: 1.5rem; }
-        .industry-features li { color: var(--gray); margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem; }
-        .industry-features li i { color: var(--secondary); flex-shrink: 0; }
-        .view-case-study { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary); text-decoration: none; font-weight: 600; padding: 0.6rem 1rem; border-radius: var(--border-radius); background: rgba(0, 102, 255, 0.1); transition: var(--transition); align-self: flex-start; cursor: pointer; }
+        .section-subtitle { color: var(--secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .section-title { font-size: 2.75rem; color: white; margin-bottom: 1rem; }
+        .section-description { color: var(--gray); max-width: 700px; margin: 0 auto; }
+        .industries-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; }
+        .industry-card { background: rgba(30, 41, 59, 0.5); border-radius: var(--border-radius-lg); padding: 2.5rem; transition: all 0.4s ease; border: 1px solid rgba(255, 255, 255, 0.05); }
+        .industry-card:hover { transform: translateY(-10px); border-color: var(--primary); box-shadow: var(--shadow-xl); }
+        .industry-icon { width: 70px; height: 70px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 1.5rem; background: rgba(0, 102, 255, 0.1); color: var(--primary); }
+        .industry-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: white; }
+        .industry-card p { color: var(--gray); margin-bottom: 1.5rem; }
+        .industry-features { list-style: none; margin-top: 1.5rem; }
+        .industry-features li { color: var(--gray); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+        .industry-features li i { color: var(--secondary); }
+        .view-case-study { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary); text-decoration: none; font-weight: 600; margin-top: 1.5rem; padding: 0.5rem 1rem; background: rgba(0, 102, 255, 0.1); border-radius: var(--border-radius); transition: all 0.3s ease; cursor: pointer; }
         .view-case-study:hover { background: rgba(0, 102, 255, 0.2); transform: translateX(5px); }
 
-        /* About Section */
+        /* About */
         .about { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-        .about-content h2 { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: 1.5rem; color: white; }
-        .about-content p { color: var(--gray); margin-bottom: 1.5rem; font-size: 1rem; line-height: 1.8; }
-        .expertise-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin: 2rem 0; }
-        .expertise-item { display: flex; align-items: center; gap: 0.75rem; color: white; font-weight: 500; font-size: 0.95rem; }
-        .expertise-item i { color: var(--secondary); font-size: 1.3rem; }
-        .profile-card { background: rgba(30, 41, 59, 0.5); border-radius: var(--border-radius-lg); padding: 2.5rem; border: 1px solid rgba(255, 255, 255, 0.08); text-align: center; position: relative; z-index: 2; }
-        .profile-image { width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1.5rem; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; font-size: 4rem; color: white; border: 5px solid rgba(255, 255, 255, 0.1); }
-        .profile-card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-        .profile-card .title { color: var(--secondary); font-weight: 700; margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+        .about-content h2 { font-size: 2.75rem; color: white; margin-bottom: 1.5rem; }
+        .about-content p { color: var(--gray); margin-bottom: 1.5rem; font-size: 1.1rem; }
+        .expertise-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0; }
+        .expertise-item { display: flex; align-items: center; gap: 0.75rem; color: white; font-weight: 500; }
+        .expertise-item i { color: var(--secondary); }
+        .profile-card { background: rgba(30, 41, 59, 0.5); padding: 2.5rem; border-radius: var(--border-radius-lg); text-align: center; border: 1px solid rgba(255, 255, 255, 0.05); }
+        .profile-image { width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1.5rem; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; border: 5px solid rgba(255, 255, 255, 0.1); }
         .profile-stats { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; }
 
-        /* Page Containers */
-        .page-container { display: none; padding-top: 100px; min-height: 100vh; }
-        .page-content { max-width: 900px; margin: 0 auto; padding: 0 2rem 80px; }
-        .page-header { text-align: center; margin-bottom: 3rem; }
-        .page-title { font-size: clamp(2.5rem, 6vw, 3.5rem); margin-bottom: 1rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .page-description { color: var(--gray); font-size: 1.1rem; line-height: 1.8; }
-        .content-section { margin-bottom: 3rem; }
-        .content-section h2 { font-size: 1.8rem; margin-bottom: 1.5rem; color: white; }
-        .content-section p { color: var(--gray); margin-bottom: 1rem; line-height: 1.8; font-size: 1rem; }
-        .content-section ul, .content-section ol { color: var(--gray); margin-left: 2rem; margin-bottom: 1.5rem; }
-        .content-section li { margin-bottom: 0.75rem; line-height: 1.8; }
-
-        /* CTA Section */
-        .cta-section { background: var(--gradient-primary); border-radius: var(--border-radius-lg); padding: 4rem 2rem; text-align: center; position: relative; overflow: hidden; }
-        .cta-section::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E"); opacity: 0.3; }
-        .cta-title { font-size: clamp(1.8rem, 4vw, 2.75rem); margin-bottom: 1.5rem; color: white; position: relative; z-index: 2; }
-        .cta-description { font-size: 1.1rem; color: rgba(255, 255, 255, 0.95); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; position: relative; z-index: 2; line-height: 1.8; }
-        .contact-options { display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; position: relative; z-index: 2; margin-bottom: 1.5rem; }
+        /* CTA */
+        .cta-section { background: var(--gradient-primary); padding: 5rem 2rem; border-radius: var(--border-radius-lg); text-align: center; }
+        .cta-title { font-size: 2.75rem; color: white; margin-bottom: 1.5rem; }
+        .cta-description { font-size: 1.25rem; color: rgba(255,255,255,0.9); margin-bottom: 2.5rem; max-width: 700px; margin: 0 auto; }
+        .contact-options { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
 
         /* Footer */
         .footer { background: rgba(7, 10, 28, 0.95); padding: 4rem 0 2rem; border-top: 1px solid rgba(255, 255, 255, 0.05); }
         .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem; }
-        .footer-logo { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem; }
-        .footer-description { color: var(--gray); margin-bottom: 1.5rem; line-height: 1.8; }
-        .footer-heading { font-size: 1.1rem; margin-bottom: 1.5rem; color: white; font-weight: 700; }
+        .footer-heading { font-size: 1.25rem; color: white; margin-bottom: 1.5rem; }
         .footer-links { list-style: none; }
         .footer-links li { margin-bottom: 0.75rem; }
-        .footer-links a { color: var(--gray); text-decoration: none; transition: var(--transition); font-size: 0.95rem; }
-        .footer-links a:hover { color: var(--primary); transform: translateX(3px); display: inline-block; }
+        .footer-links a { color: var(--gray); text-decoration: none; transition: 0.3s; }
+        .footer-links a:hover { color: var(--primary); }
         .social-links { display: flex; gap: 1rem; margin-top: 1.5rem; }
-        .social-link { width: 40px; height: 40px; border-radius: 50%; background: rgba(255, 255, 255, 0.08); display: flex; align-items: center; justify-content: center; color: var(--gray); text-decoration: none; transition: var(--transition); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .social-link:hover { background: var(--primary); color: white; border-color: var(--primary); transform: translateY(-3px); }
-        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.05); color: var(--gray); font-size: 0.9rem; }
+        .social-link { width: 40px; height: 40px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--gray); text-decoration: none; transition: 0.3s; }
+        .social-link:hover { background: var(--primary); color: white; }
+        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); color: var(--gray); }
 
-        /* Modal */
-        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(7, 10, 28, 0.95); backdrop-filter: blur(8px); z-index: 2000; align-items: center; justify-content: center; padding: 2rem; overflow-y: auto; }
+        /* --- MODAL FIXES --- */
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(7, 10, 28, 0.95); backdrop-filter: blur(5px); z-index: 2000; align-items: center; justify-content: center; padding: 2rem; }
         .modal.active { display: flex; }
-        .modal-content { background: rgba(30, 41, 59, 0.95); border-radius: var(--border-radius-lg); padding: 3rem; max-width: 1000px; width: 100%; position: relative; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: var(--shadow-xl); animation: slideUp 0.3s ease-out; }
-        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .modal-close { position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; color: var(--gray); font-size: 1.5rem; cursor: pointer; transition: var(--transition); width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; }
-        .modal-close:hover { color: white; background: rgba(255, 255, 255, 0.05); border-radius: 50%; }
-        .modal-title { font-size: 2.2rem; margin-bottom: 1rem; color: white; }
-        .modal-description { color: var(--gray); margin-bottom: 2rem; line-height: 1.8; }
-        .case-studies-list { display: grid; gap: 2rem; margin-top: 2rem; }
-        .case-study-item { background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius); padding: 2rem; border-left: 4px solid var(--primary); transition: var(--transition); }
-        .case-study-item:hover { background: rgba(0, 102, 255, 0.1); }
-        .case-study-item h4 { font-size: 1.25rem; margin-bottom: 0.5rem; color: white; }
-        .case-study-client { color: var(--secondary); font-weight: 700; margin-bottom: 1rem; font-size: 0.9rem; }
-        .case-study-results { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-        .case-study-result { text-align: center; padding: 1rem; background: rgba(0, 102, 255, 0.1); border-radius: var(--border-radius); }
-        .case-study-result .number { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
-        .case-study-result .label { font-size: 0.8rem; color: var(--gray); }
+        .modal-content { background: rgba(30, 41, 59, 0.98); border-radius: var(--border-radius-lg); padding: 3rem; max-width: 1000px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: var(--shadow-xl); }
+        .modal-close { position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; color: var(--gray); font-size: 1.5rem; cursor: pointer; }
+        .modal-close:hover { color: white; }
+        .modal-title { font-size: 2rem; margin-bottom: 1rem; color: white; }
+        .modal-description { color: var(--gray); margin-bottom: 2rem; }
         
-        /* Form Styles for Booking */
-        .booking-form { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
-        .form-group { text-align: left; }
-        .form-label { display: block; margin-bottom: 0.5rem; color: var(--light); font-weight: 500; font-size: 0.95rem; }
-        .form-input, .form-select, .form-textarea { width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; color: white; font-family: 'Outfit', sans-serif; font-size: 1rem; transition: border-color 0.3s; }
-        .form-input:focus, .form-select:focus, .form-textarea:focus { outline: none; border-color: var(--primary); background: rgba(255, 255, 255, 0.08); }
-        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        /* Case Studies inside Modal */
+        .case-studies-list { display: grid; gap: 2rem; }
+        .case-study-item { background: rgba(255,255,255,0.05); border-radius: var(--border-radius); padding: 2rem; border-left: 4px solid var(--primary); }
+        .case-study-item h4 { font-size: 1.2rem; color: white; margin-bottom: 0.5rem; }
+        .case-study-client { color: var(--secondary); font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem; }
+        .case-study-results { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .case-study-result { text-align: center; padding: 1rem; background: rgba(0,102,255,0.1); border-radius: var(--border-radius); }
+        .case-study-result .number { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        .case-study-result .label { font-size: 0.85rem; color: var(--gray); }
 
-        /* Responsive Design */
-        @media (max-width: 1024px) { .about { grid-template-columns: 1fr; gap: 2rem; } .nav-menu { gap: 1rem; font-size: 0.9rem; } .contact-options { flex-direction: column; align-items: center; } .contact-options .btn { width: 100%; max-width: 300px; } }
-        @media (max-width: 768px) { .hero { padding: 120px 0 60px; } .hero-title { font-size: 2rem; } .hero-buttons { flex-direction: column; align-items: center; } .hero-buttons .btn { width: 100%; } .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 1rem; } .section { padding: 60px 0; } .industries-grid { grid-template-columns: 1fr; } .expertise-list { grid-template-columns: 1fr; } .nav-menu { display: none; } .nav-cta { gap: 0.5rem; } .btn { padding: 0.6rem 1.2rem; font-size: 0.85rem; } .modal-content { padding: 2rem 1.5rem; } .page-content { padding: 0 1.5rem 60px; } .cta-section { padding: 2.5rem 1.5rem; } .about-content h2 { font-size: 1.8rem; } .section-title { font-size: 2rem; } .form-row { grid-template-columns: 1fr; } }
-        @media (max-width: 480px) { .container { padding: 0 1rem; } .hero { padding: 100px 0 50px; } .hero-title { font-size: 1.75rem; } .hero-subtitle { font-size: 0.95rem; } .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; } .stat { padding: 1rem; } .stat-number { font-size: 1.5rem; } .stat-label { font-size: 0.75rem; } .nav-logo-icon { width: 36px; height: 36px; font-size: 1rem; } .logo-text { font-size: 1rem; } .industry-card { padding: 1.5rem; } .modal-content { padding: 1.5rem; } .modal-title { font-size: 1.5rem; } .page-title { font-size: 2rem; } .cta-section { padding: 2rem 1rem; } .cta-title { font-size: 1.5rem; } .footer-content { gap: 2rem; } }
+        /* --- BOOKING FORM FIX --- */
+        .booking-form { display: flex; flex-direction: column; gap: 1.5rem; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .form-group { text-align: left; }
+        .form-label { display: block; margin-bottom: 0.5rem; color: var(--light); font-weight: 500; }
+        .form-input, .form-select, .form-textarea { width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; color: white; font-family: 'Inter', sans-serif; font-size: 1rem; }
+        .form-input:focus, .form-select:focus, .form-textarea:focus { outline: none; border-color: var(--primary); }
+        
+        /* THE CRITICAL FIX FOR DROPDOWN */
+        select option {
+            background-color: #0A0F2B; /* Dark background so text is visible */
+            color: white;
+        }
+
+        /* Page Pages */
+        .page-container { display: none; padding-top: 120px; min-height: 100vh; }
+        .page-content { max-width: 800px; margin: 0 auto; padding: 0 2rem 80px; }
+        .page-header { text-align: center; margin-bottom: 3rem; }
+        .page-title { font-size: 3rem; color: white; margin-bottom: 1rem; }
+        .content-section { margin-bottom: 3rem; }
+        .content-section h2 { font-size: 2rem; color: white; margin-bottom: 1.5rem; }
+        .content-section p { color: var(--gray); margin-bottom: 1rem; line-height: 1.8; }
+        .content-section ul, .content-section ol { color: var(--gray); margin-left: 2rem; }
+        .content-section li { margin-bottom: 0.5rem; }
+
+        @media (max-width: 768px) {
+            .navbar { padding: 1rem 0; }
+            .nav-menu { display: none; }
+            .hero-title { font-size: 2.25rem; }
+            .about, .industries-grid, .hero-stats { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .modal-content { padding: 2rem 1.5rem; }
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar" role="navigation" aria-label="Main">
+
+    <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo" onclick="showPage('home')" aria-label="WorkAutoAI - Home">
+            <a href="#" class="logo" onclick="window.location.reload()">
                 <div class="logo-icon">AI</div>
                 <div class="logo-text">WorkAutoAI</div>
             </a>
-            
             <div class="nav-menu">
                 <a href="#industries" class="nav-link">Solutions</a>
                 <a href="#about-expert" class="nav-link">Expert</a>
@@ -215,1044 +197,171 @@
                 <a href="javascript:void(0)" class="nav-link" onclick="showPage('about-us')">About Us</a>
                 <a href="javascript:void(0)" class="nav-link" onclick="showPage('case-studies')">Case Studies</a>
                 <a href="javascript:void(0)" class="nav-link" onclick="showPage('contact-page')">Contact Page</a>
-                <a href="javascript:void(0)" class="nav-link" onclick="showPage('privacy-policy')">Privacy Policy</a>
-            </div>
                 
-            <div class="nav-cta">
-                <button onclick="openBookingModal()" class="btn btn-secondary">Book Demo</button>
-                <button onclick="openBookingModal()" class="btn btn-primary">Get Started</button>
+                <div class="nav-cta">
+                    <button onclick="openBookingModal()" class="btn btn-secondary">Book Demo</button>
+                    <button onclick="openBookingModal()" class="btn btn-primary">Get Started</button>
+                </div>
             </div>
         </div>
     </nav>
 
     <div id="main-content">
-        <section class="hero" role="banner">
-            <div class="hero-bg" aria-hidden="true"></div>
+        <section class="hero">
+            <div class="hero-bg"></div>
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-badge">
-                        <i class="fas fa-rocket" aria-hidden="true"></i>
-                        <span>Trusted by 50+ Businesses Worldwide</span>
-                    </div>
-                    
+                    <div class="hero-badge"><i class="fas fa-rocket"></i> <span>Trusted by 50+ Businesses</span></div>
                     <h1 class="hero-title">Automate Your Business Operations with AI</h1>
-                    
-                    <p class="hero-subtitle">
-                        WorkAutoAI delivers intelligent automation solutions that save 40+ hours weekly, reduce operational costs by 60%, and scale your business exponentially.
-                    </p>
-                    
+                    <p class="hero-subtitle">WorkAutoAI transforms businesses with intelligent automation. Save 40+ hours weekly with our workflows.</p>
                     <div class="hero-buttons">
-                        <a href="#industries" class="btn btn-primary btn-large">
-                            <i class="fas fa-play-circle" aria-hidden="true"></i> Explore Solutions
-                        </a>
-                        <button onclick="openBookingModal()" class="btn btn-success btn-large">
-                            <i class="fas fa-calendar-check" aria-hidden="true"></i> Free Consultation
-                        </button>
+                        <a href="#industries" class="btn btn-primary">Explore Solutions</a>
+                        <button onclick="openBookingModal()" class="btn btn-success">Free Consultation</button>
                     </div>
-                    
-                    <div class="hero-stats" role="region" aria-label="Key Statistics">
-                        <div class="stat">
-                            <div class="stat-number">40+</div>
-                            <div class="stat-label">Hours Saved Weekly</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">60%</div>
-                            <div class="stat-label">Cost Reduction</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">100%</div>
-                            <div class="stat-label">Accuracy Rate</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">24/7</div>
-                            <div class="stat-label">Automation</div>
-                        </div>
+                    <div class="hero-stats">
+                        <div class="stat"><div class="stat-number">40+</div><div class="stat-label">Hours Saved</div></div>
+                        <div class="stat"><div class="stat-number">60%</div><div class="stat-label">Cost Reduction</div></div>
+                        <div class="stat"><div class="stat-number">100%</div><div class="stat-label">Accuracy</div></div>
+                        <div class="stat"><div class="stat-number">24/7</div><div class="stat-label">Automation</div></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="industries" class="section" role="region" aria-label="Industry Solutions">
+        <section id="industries" class="section">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-subtitle">INDUSTRY-SPECIFIC SOLUTIONS</div>
+                    <div class="section-subtitle">SOLUTIONS</div>
                     <h2 class="section-title">AI Automation For Your Industry</h2>
-                    <p class="section-description">
-                        We develop custom AI solutions tailored to your industry's unique challenges and opportunities.
-                    </p>
                 </div>
-                
                 <div class="industries-grid">
                     <div class="industry-card">
-                        <div class="industry-icon" aria-hidden="true">
-                            <i class="fas fa-industry"></i>
-                        </div>
+                        <div class="industry-icon"><i class="fas fa-industry"></i></div>
                         <h3>Manufacturing</h3>
-                        <p>Optimize production lines, predictive maintenance, quality control, and supply chain automation.</p>
-                        
+                        <p>Optimize production lines, predictive maintenance, quality control.</p>
                         <ul class="industry-features">
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Predictive maintenance alerts</li>
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Quality control automation</li>
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Supply chain optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Predictive maintenance</li>
+                            <li><i class="fas fa-check-circle"></i> Quality control automation</li>
                         </ul>
-                        
-                        <a href="javascript:void(0)" class="view-case-study" onclick="openModal('manufacturing')" role="button" tabindex="0">
-                            <span>View Case Studies</span>
-                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                        </a>
+                        <a href="javascript:void(0)" class="view-case-study" onclick="openModal('manufacturing')">View Case Studies <i class="fas fa-arrow-right"></i></a>
                     </div>
-
                     <div class="industry-card">
-                        <div class="industry-icon" aria-hidden="true">
-                            <i class="fas fa-hospital"></i>
-                        </div>
+                        <div class="industry-icon"><i class="fas fa-hospital"></i></div>
                         <h3>Healthcare</h3>
-                        <p>Automate patient scheduling, medical records, billing, and telemedicine workflows.</p>
-                        
+                        <p>Automate patient scheduling, medical records, billing.</p>
                         <ul class="industry-features">
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Patient appointment automation</li>
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Medical records processing</li>
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Insurance claim automation</li>
+                            <li><i class="fas fa-check-circle"></i> Patient appointment automation</li>
+                            <li><i class="fas fa-check-circle"></i> Insurance claim automation</li>
                         </ul>
-                        
-                        <a href="javascript:void(0)" class="view-case-study" onclick="openModal('healthcare')" role="button" tabindex="0">
-                            <span>View Case Studies</span>
-                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                        </a>
+                        <a href="javascript:void(0)" class="view-case-study" onclick="openModal('healthcare')">View Case Studies <i class="fas fa-arrow-right"></i></a>
                     </div>
-
                     <div class="industry-card">
-                        <div class="industry-icon" aria-hidden="true">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
+                        <div class="industry-icon"><i class="fas fa-shopping-cart"></i></div>
                         <h3>Retail & E-commerce</h3>
-                        <p>AI-powered inventory management, customer service automation, and dynamic pricing.</p>
-                        
+                        <p>Inventory management, customer service automation, pricing.</p>
                         <ul class="industry-features">
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Inventory prediction AI</li>
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> 24/7 customer service bots</li>
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Dynamic pricing algorithms</li>
+                            <li><i class="fas fa-check-circle"></i> Inventory prediction AI</li>
+                            <li><i class="fas fa-check-circle"></i> 24/7 customer service bots</li>
                         </ul>
-                        
-                        <a href="javascript:void(0)" class="view-case-study" onclick="openModal('retail')" role="button" tabindex="0">
-                            <span>View Case Studies</span>
-                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                        </a>
+                        <a href="javascript:void(0)" class="view-case-study" onclick="openModal('retail')">View Case Studies <i class="fas fa-arrow-right"></i></a>
                     </div>
-
                     <div class="industry-card">
-                        <div class="industry-icon" aria-hidden="true">
-                            <i class="fas fa-shipping-fast"></i>
-                        </div>
-                        <h3>Logistics & Supply Chain</h3>
-                        <p>Route optimization, warehouse automation, real-time tracking, and demand forecasting.</p>
-                        
+                        <div class="industry-icon"><i class="fas fa-shipping-fast"></i></div>
+                        <h3>Logistics</h3>
+                        <p>Route optimization, warehouse automation, demand forecasting.</p>
                         <ul class="industry-features">
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> AI route optimization</li>
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Warehouse automation</li>
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Demand forecasting</li>
+                            <li><i class="fas fa-check-circle"></i> AI route optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Warehouse automation</li>
                         </ul>
-                        
-                        <a href="javascript:void(0)" class="view-case-study" onclick="openModal('logistics')" role="button" tabindex="0">
-                            <span>View Case Studies</span>
-                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                        </a>
+                        <a href="javascript:void(0)" class="view-case-study" onclick="openModal('logistics')">View Case Studies <i class="fas fa-arrow-right"></i></a>
                     </div>
-
                     <div class="industry-card">
-                        <div class="industry-icon" aria-hidden="true">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3>Finance & Banking</h3>
-                        <p>Automated fraud detection, invoice processing, compliance reporting, and risk analysis.</p>
-                        
+                        <div class="industry-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Finance</h3>
+                        <p>Fraud detection, invoice processing, compliance.</p>
                         <ul class="industry-features">
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Fraud detection systems</li>
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Automated invoice processing</li>
-                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Compliance automation</li>
+                            <li><i class="fas fa-check-circle"></i> Fraud detection systems</li>
+                            <li><i class="fas fa-check-circle"></i> Automated invoice processing</li>
                         </ul>
-                        
-                        <a href="javascript:void(0)" class="view-case-study" onclick="openModal('finance')" role="button" tabindex="0">
-                            <span>View Case Studies</span>
-                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                        </a>
+                        <a href="javascript:void(0)" class="view-case-study" onclick="openModal('finance')">View Case Studies <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about-expert" class="section" role="region" aria-label="About Expert">
+        <section id="about-expert" class="section">
             <div class="container">
                 <div class="about">
                     <div class="about-content">
                         <div class="section-subtitle">MEET YOUR EXPERT</div>
-                        <h2>Rahul Yadav: Your AI Automation Specialist</h2>
-                        
+                        <h2>Rahul Yadav: AI Automation Specialist</h2>
                         <p>With over 5 years of experience in manufacturing, mechanical engineering, and AI implementation, I've helped businesses across industries automate complex workflows and achieve unprecedented efficiency.</p>
-                        
-                        <p>My expertise spans from designing automated production systems to implementing AI-powered business intelligence tools that transform data into actionable insights.</p>
-                        
                         <div class="expertise-list">
-                            <div class="expertise-item">
-                                <i class="fas fa-robot" aria-hidden="true"></i>
-                                <span>AI & Machine Learning</span>
-                            </div>
-                            <div class="expertise-item">
-                                <i class="fas fa-cogs" aria-hidden="true"></i>
-                                <span>Process Automation</span>
-                            </div>
-                            <div class="expertise-item">
-                                <i class="fas fa-chart-bar" aria-hidden="true"></i>
-                                <span>Business Intelligence</span>
-                            </div>
-                            <div class="expertise-item">
-                                <i class="fas fa-industry" aria-hidden="true"></i>
-                                <span>Manufacturing Systems</span>
-                            </div>
+                            <div class="expertise-item"><i class="fas fa-robot"></i> <span>AI & Machine Learning</span></div>
+                            <div class="expertise-item"><i class="fas fa-cogs"></i> <span>Process Automation</span></div>
+                            <div class="expertise-item"><i class="fas fa-chart-bar"></i> <span>Business Intelligence</span></div>
+                            <div class="expertise-item"><i class="fas fa-industry"></i> <span>Manufacturing Systems</span></div>
                         </div>
-                        
-                        <button onclick="openBookingModal()" class="btn btn-primary">
-                            <i class="fas fa-calendar-alt" aria-hidden="true"></i> Schedule Consultation
-                        </button>
+                        <button onclick="openBookingModal()" class="btn btn-primary">Schedule Consultation</button>
                     </div>
-                    
-                    <div>
-                        <div class="profile-card">
-                            <div class="profile-image" aria-hidden="true">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <h3>Rahul Yadav</h3>
-                            <div class="title">Founder & Automation Specialist</div>
-                            <p>Helping businesses leverage AI to save time, reduce costs, and scale operations efficiently.</p>
-                            
-                            <div class="profile-stats">
-                                <div class="stat">
-                                    <div class="stat-number">5+</div>
-                                    <div class="stat-label">Years Experience</div>
-                                </div>
-                                <div class="stat">
-                                    <div class="stat-number">50+</div>
-                                    <div class="stat-label">Clients</div>
-                                </div>
-                            </div>
+                    <div class="profile-card">
+                        <div class="profile-image"><i class="fas fa-user-tie"></i></div>
+                        <h3>Rahul Yadav</h3>
+                        <div class="title">Founder & Automation Specialist</div>
+                        <p>Helping businesses leverage AI to save time and reduce costs.</p>
+                        <div class="profile-stats">
+                            <div class="stat"><div class="stat-number">5+</div><div class="stat-label">Years Exp</div></div>
+                            <div class="stat"><div class="stat-number">50+</div><div class="stat-label">Clients</div></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section" role="region" aria-label="Contact">
+        <section id="contact" class="section">
             <div class="container">
                 <div class="cta-section">
-                    <h2 class="cta-title">Ready to Transform Your Business with AI?</h2>
-                    <p class="cta-description">
-                        Book a free 30-minute consultation to discover how WorkAutoAI can save your team 40+ hours weekly and reduce operational costs by up to 60%.
-                    </p>
-                    
+                    <h2 class="cta-title">Ready to Transform Your Business?</h2>
+                    <p class="cta-description">Book a free 30-minute consultation to discover how WorkAutoAI can save your team 40+ hours weekly.</p>
                     <div class="contact-options">
-                        <a href="https://wa.me/919473798147?text=Hi%20WorkAutoAI,%20I'd%20like%20to%20learn%20more%20about%20your%20AI%20automation%20solutions" 
-                           class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
-                        </a>
-                        
-                        <a href="mailto:rahulsen.yadav@gmail.com?subject=WorkAutoAI%20Consultation%20Request" 
-                           class="btn btn-email">
-                            <i class="fas fa-envelope" aria-hidden="true"></i> Email
-                        </a>
-                        
-                        <button onclick="openBookingModal()" class="btn btn-call">
-                            <i class="fas fa-calendar-check"></i> Book Consultation
-                        </button>
+                        <a href="https://wa.me/919473798147" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="mailto:rahulsen.yadav@gmail.com" class="btn btn-email"><i class="fas fa-envelope"></i> Email</a>
+                        <button onclick="openBookingModal()" class="btn btn-call"><i class="fas fa-calendar-check"></i> Book Consultation</button>
                     </div>
-                    
-                    <p style="margin-top: 1rem; color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">
-                        <i class="fas fa-clock" aria-hidden="true"></i> Response time: Within 2 hours during business days
-                    </p>
                 </div>
             </div>
         </section>
 
-        <footer class="footer" role="contentinfo">
+        <footer class="footer">
             <div class="container">
                 <div class="footer-content">
-                    <div>
-                        <div class="footer-logo">
-                            <div class="logo-icon" style="width: 36px; height: 36px; font-size: 0.9rem;">AI</div>
-                            <div class="logo-text">WorkAutoAI</div>
-                        </div>
-                        <p class="footer-description">
-                            Transforming businesses with intelligent automation solutions. We help companies save time, reduce costs, and scale operations with cutting-edge AI technology.
-                        </p>
-                        
+                    <div class="footer-col">
+                        <div class="footer-logo"><div class="logo-icon">AI</div><div class="logo-text">WorkAutoAI</div></div>
+                        <p class="footer-description">Transforming businesses with intelligent automation solutions.</p>
                         <div class="social-links">
-                            <a href="https://www.instagram.com/workautomationai" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/rahulyadav" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://twitter.com/workautoai" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.youtube.com/@WorkAutoAI" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                                <i class="fab fa-youtube" aria-hidden="true"></i>
-                            </a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
-                    
-                    <div>
-                        <h3 class="footer-heading">Solutions</h3>
-                        <ul class="footer-links">
-                            <li><a href="javascript:void(0)" onclick="openModal('manufacturing')">Manufacturing Automation</a></li>
-                            <li><a href="javascript:void(0)" onclick="openModal('healthcare')">Healthcare Automation</a></li>
-                            <li><a href="javascript:void(0)" onclick="openModal('retail')">Retail & E-commerce AI</a></li>
-                            <li><a href="javascript:void(0)" onclick="openModal('logistics')">Logistics Automation</a></li>
-                            <li><a href="javascript:void(0)" onclick="openModal('finance')">Financial Automation</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div>
+                    <div class="footer-col">
                         <h3 class="footer-heading">Company</h3>
                         <ul class="footer-links">
                             <li><a href="javascript:void(0)" onclick="showPage('about-us')">About Us</a></li>
                             <li><a href="javascript:void(0)" onclick="showPage('case-studies')">Case Studies</a></li>
-                            <li><a href="javascript:void(0)" onclick="showPage('contact-page')">Contact</a></li>
                             <li><a href="javascript:void(0)" onclick="showPage('privacy-policy')">Privacy Policy</a></li>
                         </ul>
                     </div>
-                    
-                    <div>
-                        <h3 class="footer-heading">Contact Info</h3>
+                    <div class="footer-col">
+                        <h3 class="footer-heading">Contact</h3>
                         <ul class="footer-links">
-                            <li><i class="fas fa-phone" aria-hidden="true"></i> +91 9473798147</li>
-                            <li><i class="fas fa-envelope" aria-hidden="true"></i> rahulsen.yadav@gmail.com</li>
-                            <li><i class="fas fa-clock" aria-hidden="true"></i> Mon-Fri: 9AM-6PM IST</li>
-                            <li><i class="fas fa-globe" aria-hidden="true"></i> Serving Clients Worldwide</li>
+                            <li><i class="fas fa-phone"></i> +91 9473798147</li>
+                            <li><i class="fas fa-envelope"></i> rahulsen.yadav@gmail.com</li>
                         </ul>
                     </div>
                 </div>
-                
-                <div class="footer-bottom">
-                    <p>&copy; 2024-2026 WorkAutoAI. All rights reserved. | Intelligent Business Automation Solutions</p>
-                </div>
+                <div class="footer-bottom"><p>&copy; 2026 WorkAutoAI. All rights reserved.</p></div>
             </div>
         </footer>
-    </div>
-
-    <div id="manufacturingModal" class="modal" role="dialog" aria-labelledby="manufacturing-title">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('manufacturing')" aria-label="Close modal">&times;</button>
-            <h2 class="modal-title" id="manufacturing-title">Manufacturing Automation Case Studies</h2>
-            <p class="modal-description">Real-world examples of how we transformed manufacturing operations with AI automation.</p>
-            
-            <div class="case-studies-list">
-                <div class="case-study-item">
-                    <h4>Automated Quality Control System</h4>
-                    <div class="case-study-client">Client: Precision Manufacturing Co. | Automotive Parts</div>
-                    <p>Implemented AI-powered visual inspection system that reduced defects by 92% and increased production speed by 40%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">92%</div>
-                            <div class="label">Defect Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">40%</div>
-                            <div class="label">Production Speed</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">$250K</div>
-                            <div class="label">Annual Savings</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Predictive Maintenance Implementation</h4>
-                    <div class="case-study-client">Client: Industrial Machinery Ltd. | Heavy Equipment</div>
-                    <p>AI system that predicts equipment failures 2 weeks in advance, reducing downtime by 75% and maintenance costs by 60%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">75%</div>
-                            <div class="label">Downtime Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">60%</div>
-                            <div class="label">Maintenance Cost</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">98%</div>
-                            <div class="label">Accuracy Rate</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Supply Chain Optimization</h4>
-                    <div class="case-study-client">Client: Global Electronics Corp. | Consumer Electronics</div>
-                    <p>AI-driven inventory management system that reduced stockouts by 85% and optimized warehouse space utilization by 45%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">85%</div>
-                            <div class="label">Stockout Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">45%</div>
-                            <div class="label">Space Optimization</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">$180K</div>
-                            <div class="label">Inventory Cost Savings</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Production Line Optimization</h4>
-                    <div class="case-study-client">Client: Textile Manufacturing Inc. | Apparel Industry</div>
-                    <p>Real-time AI monitoring system that increased production efficiency by 35% and reduced material waste by 28%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">35%</div>
-                            <div class="label">Efficiency Increase</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">28%</div>
-                            <div class="label">Waste Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">65%</div>
-                            <div class="label">Energy Savings</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Quality Assurance Automation</h4>
-                    <div class="case-study-client">Client: Food Processing Plant | FMCG Sector</div>
-                    <p>Automated quality monitoring system that improved compliance by 95% and reduced manual inspection hours by 80%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">95%</div>
-                            <div class="label">Compliance Improvement</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">80%</div>
-                            <div class="label">Manual Hours Saved</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">99.8%</div>
-                            <div class="label">Quality Score</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="healthcareModal" class="modal" role="dialog" aria-labelledby="healthcare-title">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('healthcare')" aria-label="Close modal">&times;</button>
-            <h2 class="modal-title" id="healthcare-title">Healthcare Automation Case Studies</h2>
-            <p class="modal-description">Transforming healthcare operations with intelligent automation solutions.</p>
-            
-            <div class="case-studies-list">
-                <div class="case-study-item">
-                    <h4>Patient Appointment Automation</h4>
-                    <div class="case-study-client">Client: Multi-Specialty Hospital | 500+ Beds</div>
-                    <p>AI scheduling system reduced no-show rates by 65% and increased patient satisfaction by 40%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">65%</div>
-                            <div class="label">No-show Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">40%</div>
-                            <div class="label">Patient Satisfaction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">50%</div>
-                            <div class="label">Staff Time Saved</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Medical Records Digitization</h4>
-                    <div class="case-study-client">Client: Regional Health Center | 200K+ Records</div>
-                    <p>AI-powered OCR system digitized 200,000+ records with 99.5% accuracy, saving 3000+ manual hours.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">99.5%</div>
-                            <div class="label">Accuracy Rate</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">3000+</div>
-                            <div class="label">Hours Saved</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">$120K</div>
-                            <div class="label">Annual Savings</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Prescription Automation System</h4>
-                    <div class="case-study-client">Client: Pharmacy Chain | 50+ Locations</div>
-                    <p>AI system automated prescription processing, reducing errors by 95% and processing time by 70%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">95%</div>
-                            <div class="label">Error Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">70%</div>
-                            <div class="label">Processing Time</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">80%</div>
-                            <div class="label">Patient Wait Time</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Insurance Claim Processing</h4>
-                    <div class="case-study-client">Client: Health Insurance Provider | 1M+ Claims</div>
-                    <p>Automated claim processing system reduced processing time from 14 days to 2 hours with 99% accuracy.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">99%</div>
-                            <div class="label">Accuracy Rate</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">14→2</div>
-                            <div class="label">Days to Hours</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">$500K</div>
-                            <div class="label">Annual Savings</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Telemedicine Platform</h4>
-                    <div class="case-study-client">Client: Healthcare Network | Rural Outreach</div>
-                    <p>AI-powered telemedicine platform increased patient reach by 300% and reduced consultation costs by 60%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">300%</div>
-                            <div class="label">Patient Reach</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">60%</div>
-                            <div class="label">Cost Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">90%</div>
-                            <div class="label">Patient Satisfaction</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="retailModal" class="modal" role="dialog" aria-labelledby="retail-title">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('retail')" aria-label="Close modal">&times;</button>
-            <h2 class="modal-title" id="retail-title">Retail & E-commerce Automation Case Studies</h2>
-            <p class="modal-description">AI-powered solutions that transformed retail businesses and boosted sales.</p>
-            
-            <div class="case-studies-list">
-                <div class="case-study-item">
-                    <h4>Inventory Prediction AI</h4>
-                    <div class="case-study-client">Client: Fashion Retail Chain | 100+ Stores</div>
-                    <p>AI system predicted demand with 92% accuracy, reducing overstock by 45% and increasing sales by 28%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">92%</div>
-                            <div class="label">Demand Prediction Accuracy</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">45%</div>
-                            <div class="label">Overstock Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">28%</div>
-                            <div class="label">Sales Increase</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>24/7 Customer Service Bot</h4>
-                    <div class="case-study-client">Client: Online Electronics Store | $50M+ Revenue</div>
-                    <p>AI chatbot handled 85% of customer inquiries, reducing response time from 4 hours to 30 seconds.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">85%</div>
-                            <div class="label">Inquiries Automated</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">4h→30s</div>
-                            <div class="label">Response Time</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">35%</div>
-                            <div class="label">Support Cost Reduction</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Dynamic Pricing Algorithm</h4>
-                    <div class="case-study-client">Client: E-commerce Marketplace | 500K+ Products</div>
-                    <p>AI adjusted prices in real-time based on demand and competition, increasing profit margins by 22%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">22%</div>
-                            <div class="label">Profit Margin Increase</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">40%</div>
-                            <div class="label">Competitive Pricing</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">$1.8M</div>
-                            <div class="label">Additional Annual Revenue</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Personalized Recommendation Engine</h4>
-                    <div class="case-study-client">Client: Home Decor E-commerce | 200K+ Customers</div>
-                    <p>AI recommendation system increased average order value by 35% and customer retention by 40%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">35%</div>
-                            <div class="label">Order Value Increase</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">40%</div>
-                            <div class="label">Customer Retention</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">60%</div>
-                            <div class="label">Click-through Rate</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Automated Order Processing</h4>
-                    <div class="case-study-client">Client: Multi-channel Retailer | 10K+ Daily Orders</div>
-                    <p>AI system automated order fulfillment, reducing processing time from 4 hours to 15 minutes per 1000 orders.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">94%</div>
-                            <div class="label">Time Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">99.9%</div>
-                            <div class="label">Order Accuracy</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">$300K</div>
-                            <div class="label">Annual Labor Savings</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="logisticsModal" class="modal" role="dialog" aria-labelledby="logistics-title">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('logistics')" aria-label="Close modal">&times;</button>
-            <h2 class="modal-title" id="logistics-title">Logistics & Supply Chain Automation Case Studies</h2>
-            <p class="modal-description">Optimizing logistics operations with intelligent AI solutions.</p>
-            
-            <div class="case-studies-list">
-                <div class="case-study-item">
-                    <h4>AI Route Optimization</h4>
-                    <div class="case-study-client">Client: National Delivery Service | 5000+ Vehicles</div>
-                    <p>AI optimized delivery routes in real-time, reducing fuel costs by 25% and improving delivery times by 40%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">25%</div>
-                            <div class="label">Fuel Cost Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">40%</div>
-                            <div class="label">Delivery Time Improvement</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">95%</div>
-                            <div class="label">On-time Delivery</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Warehouse Automation System</h4>
-                    <div class="case-study-client">Client: Fulfillment Center | 1M+ sq. ft.</div>
-                    <p>AI-powered warehouse management increased picking efficiency by 60% and reduced errors by 85%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">60%</div>
-                            <div class="label">Picking Efficiency</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">85%</div>
-                            <div class="label">Error Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">45%</div>
-                            <div class="label">Space Utilization</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Demand Forecasting AI</h4>
-                    <div class="case-study-client">Client: Global Supply Chain | 100+ Countries</div>
-                    <p>AI predicted demand fluctuations with 88% accuracy, reducing stockouts by 70% and excess inventory by 55%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">88%</div>
-                            <div class="label">Forecast Accuracy</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">70%</div>
-                            <div class="label">Stockout Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">55%</div>
-                            <div class="label">Excess Inventory</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Real-time Tracking System</h4>
-                    <div class="case-study-client">Client: Cold Chain Logistics | Temperature-sensitive Goods</div>
-                    <p>AI monitoring system maintained optimal conditions with 99.8% accuracy and reduced spoilage by 90%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">99.8%</div>
-                            <div class="label">Condition Accuracy</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">90%</div>
-                            <div class="label">Spoilage Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">$2.1M</div>
-                            <div class="label">Annual Savings</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Automated Documentation Processing</h4>
-                    <div class="case-study-client">Client: International Shipping Company | 50K+ Documents Daily</div>
-                    <p>AI processed shipping documents with 99.5% accuracy, reducing processing time from 15 minutes to 30 seconds per document.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">99.5%</div>
-                            <div class="label">Processing Accuracy</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">15m→30s</div>
-                            <div class="label">Time per Document</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">$850K</div>
-                            <div class="label">Annual Labor Savings</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="financeModal" class="modal" role="dialog" aria-labelledby="finance-title">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('finance')" aria-label="Close modal">&times;</button>
-            <h2 class="modal-title" id="finance-title">Finance & Banking Automation Case Studies</h2>
-            <p class="modal-description">Transforming financial operations with secure AI automation.</p>
-            
-            <div class="case-studies-list">
-                <div class="case-study-item">
-                    <h4>AI Fraud Detection System</h4>
-                    <div class="case-study-client">Client: National Bank | 10M+ Customers</div>
-                    <p>AI detected fraudulent transactions with 95% accuracy, reducing false positives by 80% and preventing $1.2M in fraud monthly.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">95%</div>
-                            <div class="label">Detection Accuracy</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">80%</div>
-                            <div class="label">False Positive Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">$1.2M</div>
-                            <div class="label">Monthly Fraud Prevention</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Automated Invoice Processing</h4>
-                    <div class="case-study-client">Client: Manufacturing Conglomerate | 100K+ Invoices Monthly</div>
-                    <p>AI processed invoices with 99.7% accuracy, reducing processing time from 5 days to 2 hours and cutting costs by 65%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">99.7%</div>
-                            <div class="label">Processing Accuracy</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">5d→2h</div>
-                            <div class="label">Processing Time</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">65%</div>
-                            <div class="label">Cost Reduction</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Compliance Automation</h4>
-                    <div class="case-study-client">Client: Investment Bank | Regulatory Compliance</div>
-                    <p>AI monitored transactions for compliance violations, reducing manual review time by 75% and increasing detection rate by 90%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">75%</div>
-                            <div class="label">Review Time Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">90%</div>
-                            <div class="label">Detection Rate Increase</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">$3M</div>
-                            <div class="label">Annual Compliance Savings</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Credit Risk Assessment AI</h4>
-                    <div class="case-study-client">Client: Credit Institution | Loan Portfolio $5B+</div>
-                    <p>AI assessed credit risk with 92% accuracy, reducing default rates by 40% and increasing approval speed by 80%.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">92%</div>
-                            <div class="label">Assessment Accuracy</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">40%</div>
-                            <div class="label">Default Rate Reduction</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">80%</div>
-                            <div class="label">Approval Speed</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-item">
-                    <h4>Automated Financial Reporting</h4>
-                    <div class="case-study-client">Client: Financial Services Firm | Monthly Reporting</div>
-                    <p>AI generated financial reports automatically, reducing preparation time from 2 weeks to 4 hours with 100% accuracy.</p>
-                    <div class="case-study-results">
-                        <div class="case-study-result">
-                            <div class="number">100%</div>
-                            <div class="label">Report Accuracy</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">2w→4h</div>
-                            <div class="label">Preparation Time</div>
-                        </div>
-                        <div class="case-study-result">
-                            <div class="number">85%</div>
-                            <div class="label">Staff Time Saved</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="about-us-page" class="page-container">
-        <section class="page-content">
-            <a href="javascript:void(0)" class="btn btn-secondary" onclick="showPage('home')" style="margin-bottom: 2rem;">
-                <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Home
-            </a>
-            <div class="page-header">
-                <h1 class="page-title">About WorkAutoAI</h1>
-                <p class="page-description">Pioneering the future of business automation through artificial intelligence</p>
-            </div>
-
-            <div class="content-section">
-                <h2>Our Mission</h2>
-                <p>WorkAutoAI was founded with a singular mission: to democratize artificial intelligence for businesses of all sizes. We believe that every company, regardless of size or industry, should have access to cutting-edge automation technology that drives growth, efficiency, and innovation.</p>
-            </div>
-
-            <div class="content-section">
-                <h2>Our Story</h2>
-                <p>Founded in 2022 by Rahul Yadav, WorkAutoAI emerged from a simple observation: while working in the manufacturing sector, Rahul witnessed firsthand how much time and resources were wasted on repetitive tasks that could easily be automated.</p>
-            </div>
-
-            <div class="content-section">
-                <h2>Why Choose WorkAutoAI?</h2>
-                <ul>
-                    <li><strong>Proven Results:</strong> 50+ successful implementations across 5+ industries</li>
-                    <li><strong>Expert Team:</strong> AI engineers, industry specialists, and business analysts</li>
-                    <li><strong>Custom Solutions:</strong> Tailored automation for your specific needs</li>
-                    <li><strong>24/7 Support:</strong> Dedicated customer success team</li>
-                    <li><strong>Measurable ROI:</strong> Average 4-6 month payback period</li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <button onclick="openBookingModal()" class="btn btn-primary">
-                    <i class="fas fa-handshake" aria-hidden="true"></i> Partner With Us
-                </button>
-            </div>
-        </section>
-    </div>
-
-    <div id="case-studies-page" class="page-container">
-        <section class="page-content">
-            <a href="javascript:void(0)" class="btn btn-secondary" onclick="showPage('home')" style="margin-bottom: 2rem;">
-                <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Home
-            </a>
-            <div class="page-header">
-                <h1 class="page-title">Case Studies</h1>
-                <p class="page-description">Real-world results from businesses we've transformed</p>
-            </div>
-
-            <div class="content-section">
-                <p>Our clients have seen remarkable results with WorkAutoAI's automation solutions. Here are some highlights of our successful implementations:</p>
-            </div>
-
-            <div class="content-section">
-                <h2>Manufacturing Success Story</h2>
-                <p><strong>Precision Manufacturing Co.</strong> - Implemented AI-powered quality control that reduced defects by 92%, increased production speed by 40%, and saved $250K annually.</p>
-            </div>
-
-            <div class="content-section">
-                <h2>Healthcare Transformation</h2>
-                <p><strong>Multi-Specialty Hospital</strong> - AI scheduling system reduced no-show rates by 65%, improved patient satisfaction by 40%, and saved staff 50% of appointment management time.</p>
-            </div>
-
-            <div class="content-section">
-                <h2>E-commerce Growth</h2>
-                <p><strong>Fashion Retail Chain</strong> - AI inventory prediction achieved 92% accuracy, reduced overstock by 45%, and increased sales by 28% through intelligent stock management.</p>
-            </div>
-
-            <div class="content-section">
-                <button onclick="openBookingModal()" class="btn btn-primary">
-                    <i class="fas fa-calendar-alt" aria-hidden="true"></i> Book Your Free Consultation
-                </button>
-            </div>
-        </section>
-    </div>
-
-    <div id="contact-page" class="page-container">
-        <section class="page-content">
-            <a href="javascript:void(0)" class="btn btn-secondary" onclick="showPage('home')" style="margin-bottom: 2rem;">
-                <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Home
-            </a>
-            <div class="page-header">
-                <h1 class="page-title">Contact WorkAutoAI</h1>
-                <p class="page-description">Get in touch with our automation experts</p>
-            </div>
-
-            <div class="content-section">
-                <h2>Get In Touch</h2>
-                <p>Choose your preferred way to reach us:</p>
-                
-                <div class="contact-options" style="justify-content: flex-start; margin-top: 2rem;">
-                    <a href="https://wa.me/919473798147?text=Hi%20WorkAutoAI,%20I'd%20like%20to%20learn%20more" 
-                       class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp: +91 9473798147
-                    </a>
-                    
-                    <a href="mailto:rahulsen.yadav@gmail.com?subject=WorkAutoAI%20Consultation%20Request" 
-                       class="btn btn-email">
-                        <i class="fas fa-envelope" aria-hidden="true"></i> Email: rahulsen.yadav@gmail.com
-                    </a>
-                    
-                    <button onclick="openBookingModal()" class="btn btn-call">
-                        <i class="fas fa-calendar-check" aria-hidden="true"></i> Book Free Consultation
-                    </button>
-                </div>
-            </div>
-
-            <div class="content-section">
-                <h2>Business Hours</h2>
-                <ul>
-                    <li><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM (IST)</li>
-                    <li><strong>Saturday:</strong> 10:00 AM - 2:00 PM (IST)</li>
-                    <li><strong>Response time:</strong> Within 2 hours during business days</li>
-                </ul>
-            </div>
-        </section>
-    </div>
-
-    <div id="privacy-policy-page" class="page-container">
-        <section class="page-content">
-            <a href="javascript:void(0)" class="btn btn-secondary" onclick="showPage('home')" style="margin-bottom: 2rem;">
-                <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Home
-            </a>
-            <div class="page-header">
-                <h1 class="page-title">Privacy Policy</h1>
-                <p class="page-description">How we protect your data</p>
-            </div>
-
-            <div class="content-section">
-                <h2>Information We Collect</h2>
-                <p>We collect information you provide directly to us, such as name, email, phone number, and company information when you request a consultation.</p>
-            </div>
-
-            <div class="content-section">
-                <h2>How We Use Your Information</h2>
-                <ul>
-                    <li>Provide and improve our AI automation services</li>
-                    <li>Respond to your inquiries and provide support</li>
-                    <li>Send you technical notices and updates</li>
-                    <li>Communicate about our services</li>
-                    <li>Monitor and analyze service usage</li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <h2>Data Security</h2>
-                <p>We implement appropriate technical and organizational security measures to protect your personal information, including encryption, regular security assessments, access controls, and secure data storage.</p>
-            </div>
-
-            <div class="content-section">
-                <h2>Your Rights</h2>
-                <ul>
-                    <li>Access the personal information we hold about you</li>
-                    <li>Request correction of inaccurate information</li>
-                    <li>Request deletion of your information</li>
-                    <li>Withdraw consent at any time</li>
-                </ul>
-                <p>To exercise these rights, contact us at <strong>rahulsen.yadav@gmail.com</strong></p>
-            </div>
-
-            <div class="content-section">
-                <p><strong>Last Updated:</strong> January 2024</p>
-            </div>
-        </section>
     </div>
 
     <div id="bookingModal" class="modal">
@@ -1260,7 +369,6 @@
             <button class="modal-close" onclick="closeBookingModal()">&times;</button>
             <h2 class="modal-title" style="text-align: center;">Book Free Consultation</h2>
             <p class="modal-description" style="text-align: center;">Fill out the form below. We will receive your details instantly on WhatsApp.</p>
-            
             <form class="booking-form" onsubmit="submitBooking(event)">
                 <div class="form-row">
                     <div class="form-group">
@@ -1272,7 +380,6 @@
                         <input type="tel" id="b-phone" class="form-input" placeholder="+91 98765 43210" required>
                     </div>
                 </div>
-                
                 <div class="form-row">
                     <div class="form-group">
                         <label class="form-label">Business Type</label>
@@ -1290,113 +397,232 @@
                         <input type="text" id="b-date" class="form-input" placeholder="Tomorrow at 11 AM">
                     </div>
                 </div>
-
                 <div class="form-group">
                     <label class="form-label">What do you want to automate? *</label>
                     <textarea id="b-msg" class="form-textarea" rows="3" placeholder="I want to automate my daily reports..." required></textarea>
                 </div>
-
-                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
-                    Confirm & Send via WhatsApp <i class="fab fa-whatsapp"></i>
-                </button>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Confirm & Send via WhatsApp <i class="fab fa-whatsapp"></i></button>
             </form>
         </div>
+    </div>
+
+    <div id="manufacturingModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('manufacturing')">&times;</button>
+            <h2 class="modal-title">Manufacturing Automation</h2>
+            <div class="case-studies-list">
+                <div class="case-study-item">
+                    <h4>Automated Quality Control</h4>
+                    <div class="case-study-client">Precision Manufacturing Co.</div>
+                    <p>Implemented AI-powered visual inspection reducing defects by 92%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result"><div class="number">92%</div><div class="label">Defect Reduction</div></div>
+                        <div class="case-study-result"><div class="number">$250K</div><div class="label">Savings</div></div>
+                    </div>
+                </div>
+                <div class="case-study-item">
+                    <h4>Predictive Maintenance</h4>
+                    <div class="case-study-client">Industrial Machinery Ltd.</div>
+                    <p>AI predicts failures 2 weeks in advance, reducing downtime by 75%.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result"><div class="number">75%</div><div class="label">Uptime</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="healthcareModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('healthcare')">&times;</button>
+            <h2 class="modal-title">Healthcare Automation</h2>
+            <div class="case-studies-list">
+                <div class="case-study-item">
+                    <h4>Patient Scheduling</h4>
+                    <div class="case-study-client">Multi-Specialty Hospital</div>
+                    <p>Reduced no-show rates by 65% and saved 50% staff time.</p>
+                    <div class="case-study-results">
+                        <div class="case-study-result"><div class="number">65%</div><div class="label">Efficiency</div></div>
+                    </div>
+                </div>
+                <div class="case-study-item">
+                    <h4>Records Digitization</h4>
+                    <div class="case-study-client">Regional Health Center</div>
+                    <p>Digitized 200K+ records with 99.5% accuracy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="retailModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('retail')">&times;</button>
+            <h2 class="modal-title">Retail Automation</h2>
+            <div class="case-studies-list">
+                <div class="case-study-item">
+                    <h4>Inventory Prediction</h4>
+                    <div class="case-study-client">Fashion Retail Chain</div>
+                    <p>Reduced overstock by 45% using predictive AI.</p>
+                </div>
+                <div class="case-study-item">
+                    <h4>Customer Service Bot</h4>
+                    <div class="case-study-client">Online Electronics Store</div>
+                    <p>Automated 85% of inquiries, reducing response time to 30s.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="logisticsModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('logistics')">&times;</button>
+            <h2 class="modal-title">Logistics Automation</h2>
+            <div class="case-studies-list">
+                <div class="case-study-item">
+                    <h4>Route Optimization</h4>
+                    <div class="case-study-client">National Delivery Service</div>
+                    <p>Reduced fuel costs by 25% and improved delivery times by 40%.</p>
+                </div>
+                <div class="case-study-item">
+                    <h4>Warehouse Automation</h4>
+                    <div class="case-study-client">Fulfillment Center</div>
+                    <p>Increased picking efficiency by 60%.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="financeModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('finance')">&times;</button>
+            <h2 class="modal-title">Finance Automation</h2>
+            <div class="case-studies-list">
+                <div class="case-study-item">
+                    <h4>Fraud Detection</h4>
+                    <div class="case-study-client">National Bank</div>
+                    <p>Prevented $1.2M in fraud monthly with 95% accuracy.</p>
+                </div>
+                <div class="case-study-item">
+                    <h4>Invoice Processing</h4>
+                    <div class="case-study-client">Manufacturing Conglomerate</div>
+                    <p>Reduced processing time from 5 days to 2 hours.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-us-page" class="page-container">
+        <section class="page-content">
+            <a href="javascript:void(0)" class="btn btn-secondary" onclick="showPage('home')" style="margin-bottom: 2rem;">&larr; Back to Home</a>
+            <div class="page-header"><h1 class="page-title">About WorkAutoAI</h1></div>
+            <div class="content-section">
+                <h2>Our Mission</h2>
+                <p>WorkAutoAI was founded with a singular mission: to democratize artificial intelligence for businesses of all sizes.</p>
+            </div>
+            <div class="content-section">
+                <h2>Our Story</h2>
+                <p>Founded in 2022 by Rahul Yadav, WorkAutoAI emerged from a simple observation in the manufacturing sector.</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="case-studies-page" class="page-container">
+        <section class="page-content">
+            <a href="javascript:void(0)" class="btn btn-secondary" onclick="showPage('home')" style="margin-bottom: 2rem;">&larr; Back to Home</a>
+            <div class="page-header"><h1 class="page-title">All Case Studies</h1></div>
+            <div class="case-study-item">
+                <h4>Manufacturing: Quality Control</h4>
+                <p>Reduced defects by 92%.</p>
+            </div>
+            <div class="case-study-item" style="margin-top: 2rem;">
+                <h4>Healthcare: Patient Scheduling</h4>
+                <p>Reduced no-shows by 65%.</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="contact-page" class="page-container">
+        <section class="page-content">
+            <a href="javascript:void(0)" class="btn btn-secondary" onclick="showPage('home')" style="margin-bottom: 2rem;">&larr; Back to Home</a>
+            <div class="page-header"><h1 class="page-title">Contact Us</h1></div>
+            <div class="content-section">
+                <p>Email: rahulsen.yadav@gmail.com</p>
+                <p>Phone: +91 9473798147</p>
+                <button onclick="openBookingModal()" class="btn btn-primary" style="margin-top: 1rem;">Book Consultation</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="privacy-policy-page" class="page-container">
+        <section class="page-content">
+            <a href="javascript:void(0)" class="btn btn-secondary" onclick="showPage('home')" style="margin-bottom: 2rem;">&larr; Back to Home</a>
+            <div class="page-header"><h1 class="page-title">Privacy Policy</h1></div>
+            <div class="content-section">
+                <p>We respect your privacy. All data collected is used solely for business communication.</p>
+            </div>
+        </section>
     </div>
 
     <script>
         // Page Navigation
         function showPage(pageId) {
-            document.querySelectorAll('.page-container, #main-content').forEach(el => {
-                el.style.display = 'none';
-            });
-            
+            document.querySelectorAll('.page-container, #main-content').forEach(el => el.style.display = 'none');
             if (pageId === 'home') {
                 document.getElementById('main-content').style.display = 'block';
-                window.scrollTo({top: 0, behavior: 'smooth'});
             } else {
-                const pageElement = document.getElementById(pageId + '-page');
-                if (pageElement) {
-                    pageElement.style.display = 'block';
-                    window.scrollTo({top: 0, behavior: 'smooth'});
-                }
+                const page = document.getElementById(pageId + '-page');
+                if(page) page.style.display = 'block';
             }
+            window.scrollTo({top: 0, behavior: 'smooth'});
         }
 
-        // Modal Functions
-        function openModal(industry) {
-            document.getElementById(industry + 'Modal').classList.add('active');
+        // Modals
+        function openModal(id) {
+            document.getElementById(id + 'Modal').classList.add('active');
             document.body.style.overflow = 'hidden';
         }
-        
-        function closeModal(industry) {
-            document.getElementById(industry + 'Modal').classList.remove('active');
+        function closeModal(id) {
+            document.getElementById(id + 'Modal').classList.remove('active');
             document.body.style.overflow = 'auto';
         }
-        
+
+        // Booking Modal
+        function openBookingModal() {
+            document.getElementById('bookingModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // WhatsApp Submit
+        function submitBooking(e) {
+            e.preventDefault();
+            const name = document.getElementById('b-name').value;
+            const phone = document.getElementById('b-phone').value;
+            const type = document.getElementById('b-type').value;
+            const date = document.getElementById('b-date').value;
+            const msg = document.getElementById('b-msg').value;
+            const whatsappMsg = `*New Booking Request*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Industry:* ${type}%0A*Preferred Time:* ${date}%0A*Requirement:* ${msg}`;
+            window.open(`https://wa.me/919473798147?text=${whatsappMsg}`, '_blank');
+            closeBookingModal();
+        }
+
+        // Navbar Scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
+
+        // Close modal on outside click
         window.onclick = function(event) {
             if (event.target.classList.contains('modal')) {
                 event.target.classList.remove('active');
                 document.body.style.overflow = 'auto';
             }
         };
-
-        // Navbar Scroll Effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Smooth Scroll for Anchor Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                if(document.getElementById('main-content').style.display !== 'none') {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
-
-        // --- BOOKING MODAL LOGIC (New) ---
-        function openBookingModal() {
-            document.getElementById('bookingModal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeBookingModal() {
-            document.getElementById('bookingModal').classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-
-        function submitBooking(e) {
-            e.preventDefault();
-            
-            // Collect Data
-            const name = document.getElementById('b-name').value;
-            const phone = document.getElementById('b-phone').value;
-            const type = document.getElementById('b-type').value;
-            const date = document.getElementById('b-date').value;
-            const msg = document.getElementById('b-msg').value;
-
-            // Create WhatsApp Message
-            const whatsappMsg = `*New Booking Request*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Industry:* ${type}%0A*Preferred Time:* ${date}%0A*Requirement:* ${msg}`;
-
-            // Redirect to WhatsApp
-            window.open(`https://wa.me/919473798147?text=${whatsappMsg}`, '_blank');
-            
-            closeBookingModal();
-        }
     </script>
 </body>
 </html>
