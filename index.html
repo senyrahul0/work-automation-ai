@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head />
-   <meta name="google-site-verification" content="77--swN7r1L9Fn9txQRShYxCccwQZTMbF4bzTVrvibA" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="google-site-verification" content="77--swN7r1L9Fn9txQRShYxCccwQZTMbF4bzTVrvibA" />
     
     <title>WorkAutoAI | AI Automation Manufacturing Business | Save 40+ Hours Weekly</title>
     <meta name="description" content="Automate manufacturing, healthcare & logistics with AI. Save 40+ hours/week, reduce costs 60%. Expert Rahul Yadav helps 50+ businesses with Make.com automation & QC solutions.">
     <meta name="keywords" content="AI automation, manufacturing automation, business automation, make.com expert, die casting QC, RPA solutions, process automation, factory automation">
     <meta name="author" content="WorkAutoAI - Rahul Yadav">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-    <link rel="canonical" href="https://workautomationai.com/">
+    <link rel="canonical" href="https://workautomationai.com/ ">
     
     <meta property="og:title" content="WorkAutoAI - Save 40+ Hours Weekly with AI Automation">
     <meta property="og:description" content="50+ businesses trust WorkAutoAI. Save time, cut costs 60%, automate QC & reporting.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://workautomationai.com/">
+    <meta property="og:url" content="https://workautomationai.com/ ">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="WorkAutoAI | Manufacturing AI Automation Expert">
     
@@ -22,7 +24,7 @@
     <link rel="icon" type="image/png" href="photos/favicon.png">
     <link rel="apple-touch-icon" href="photos/favicon.png">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <style>
@@ -78,10 +80,43 @@
             box-shadow: var(--shadow-xl);
         }
         .logo-text { font-size: 1.4rem; font-weight: 800; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .nav-menu { display: flex; gap: 2rem; flex: 1; align-items: center; }
-        .nav-link { color: var(--gray); text-decoration: none; font-weight: 500; transition: var(--transition); cursor: pointer; }
+        
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+        
+        .nav-menu { 
+            display: flex; 
+            gap: 2rem; 
+            flex: 1; 
+            align-items: center; 
+            transition: var(--transition);
+        }
+        
+        .nav-menu.active {
+            display: flex;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: rgba(7, 10, 28, 0.98);
+            flex-direction: column;
+            padding: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            gap: 1.5rem;
+        }
+        
+        .nav-link { color: var(--gray); text-decoration: none; font-weight: 500; transition: var(--transition); cursor: pointer; padding: 0.5rem 0; display: block; }
         .nav-link:hover { color: white; }
-        .nav-cta { display: flex; gap: 1rem; flex-shrink: 0; }
+        .nav-cta { display: flex; gap: 1rem; flex-shrink: 0; align-items: center; }
 
         .btn {
             padding: 0.7rem 1.5rem;
@@ -98,6 +133,8 @@
             border: none;
             font-family: 'Outfit', sans-serif;
             white-space: nowrap;
+            min-height: 44px;
+            touch-action: manipulation;
         }
 
         .btn:active { transform: scale(0.98); }
@@ -217,6 +254,7 @@
             transition: var(--transition);
             cursor: pointer;
             align-self: flex-start;
+            min-height: 44px;
         }
 
         .view-case-study:hover { background: rgba(0, 102, 255, 0.2); transform: translateX(5px); }
@@ -448,9 +486,14 @@
             justify-content: center;
             padding: 2rem;
             overflow-y: auto;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
 
-        .modal.active { display: flex; }
+        .modal.active { 
+            display: flex; 
+            opacity: 1;
+        }
 
         .modal-content {
             background: rgba(30, 41, 59, 0.95);
@@ -462,26 +505,38 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             max-height: 90vh;
             overflow-y: auto;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .modal.active .modal-content {
+            transform: scale(1);
         }
 
         .modal-close {
             position: absolute;
             top: 1.5rem;
             right: 1.5rem;
-            background: none;
+            background: rgba(255, 255, 255, 0.1);
             border: none;
             color: var(--gray);
             font-size: 1.5rem;
             cursor: pointer;
-            width: 36px;
-            height: 36px;
+            width: 44px;
+            height: 44px;
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 50%;
+            transition: var(--transition);
             z-index: 2001;
         }
 
-        .modal-close:hover { color: white; }
+        .modal-close:hover { 
+            color: white; 
+            background: rgba(255, 255, 255, 0.2);
+        }
+
         .modal-title { font-size: 2.2rem; margin-bottom: 1rem; color: white; }
         .modal-description { color: var(--gray); margin-bottom: 2rem; line-height: 1.8; }
 
@@ -500,6 +555,11 @@
             font-weight: 600;
             z-index: 2001;
             box-shadow: 0 8px 16px rgba(0, 102, 255, 0.3);
+            cursor: pointer;
+            min-height: 44px;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
         }
 
         /* Footer */
@@ -519,13 +579,13 @@
         .footer-heading { font-size: 1.1rem; margin-bottom: 1.5rem; color: white; font-weight: 700; }
         .footer-links { list-style: none; }
         .footer-links li { margin-bottom: 0.75rem; }
-        .footer-links a { color: var(--gray); text-decoration: none; transition: var(--transition); cursor: pointer; }
+        .footer-links a { color: var(--gray); text-decoration: none; transition: var(--transition); cursor: pointer; display: inline-block; padding: 0.25rem 0; }
         .footer-links a:hover { color: var(--primary); }
 
         .social-links { display: flex; gap: 1rem; margin-top: 1.5rem; }
         .social-link {
-            width: 40px;
-            height: 40px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.08);
             display: flex;
@@ -551,7 +611,8 @@
             border-radius: 8px;
             color: white;
             font-family: 'Outfit', sans-serif;
-            font-size: 1rem;
+            font-size: 16px; /* Prevent zoom on iOS */
+            min-height: 44px;
         }
 
         .form-input:focus, .form-select:focus, .form-textarea:focus {
@@ -559,67 +620,22 @@
             border-color: var(--primary);
         }
 
+        .form-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394A3B8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            padding-right: 2.5rem;
+        }
+
         .form-select option {
             background: var(--darker);
             color: white;
             padding: 12px;
+            font-size: 16px;
         }
 
         .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-
-        /* Documentation Tab */
-        .doc-btn {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 50px;
-            height: 50px;
-            background: var(--primary);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            font-size: 1.2rem;
-            cursor: pointer;
-            z-index: 999;
-            box-shadow: 0 8px 16px rgba(0, 102, 255, 0.3);
-            transition: var(--transition);
-        }
-
-        .doc-btn:hover { transform: scale(1.1); }
-
-        .doc-panel {
-            position: fixed;
-            right: 0;
-            top: 0;
-            width: 400px;
-            height: 100vh;
-            background: rgba(30, 41, 59, 0.98);
-            border-left: 2px solid var(--primary);
-            z-index: 1999;
-            overflow-y: auto;
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-            padding: 2rem;
-        }
-
-        .doc-panel.open { transform: translateX(0); }
-
-        .doc-close {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        .doc-title { color: var(--primary); font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
-        .doc-subtitle { color: var(--secondary); font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: 600; }
-        .doc-text { color: var(--gray); font-size: 0.85rem; line-height: 1.6; margin-bottom: 1rem; }
-        .doc-list { color: var(--gray); font-size: 0.85rem; margin-left: 1rem; margin-bottom: 1rem; }
-        .doc-list li { margin-bottom: 0.5rem; }
 
         /* Responsive */
         @media (max-width: 1024px) {
@@ -630,6 +646,31 @@
         }
 
         @media (max-width: 768px) {
+            .mobile-menu-toggle { display: block; }
+            .nav-menu { 
+                display: none; 
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: rgba(7, 10, 28, 0.98);
+                flex-direction: column;
+                padding: 2rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                gap: 1.5rem;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            }
+            .nav-menu.active { display: flex; }
+            .nav-cta { display: none; }
+            .nav-menu .nav-cta-mobile { 
+                display: flex; 
+                flex-direction: column; 
+                gap: 1rem; 
+                margin-top: 1rem;
+                padding-top: 1rem;
+                border-top: 1px solid rgba(255,255,255,0.1);
+            }
+            
             .hero { padding: 120px 0 60px; }
             .hero-title { font-size: 2rem; }
             .hero-buttons { flex-direction: column; align-items: center; }
@@ -638,19 +679,16 @@
             .section { padding: 60px 0; }
             .industries-grid { grid-template-columns: 1fr; }
             .expertise-list { grid-template-columns: 1fr; }
-            .nav-menu { display: none; }
-            .nav-cta { gap: 0.5rem; }
             .btn { padding: 0.6rem 1.2rem; font-size: 0.85rem; }
             .modal-content { padding: 2rem 1.5rem; }
             .cta-section { padding: 2.5rem 1.5rem; }
             .form-row { grid-template-columns: 1fr; }
             .case-study-results { grid-template-columns: repeat(2, 1fr); }
-            .doc-panel { width: 100%; }
-            .doc-btn { width: 45px; height: 45px; }
-            .mobile-back-btn { display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+            .mobile-back-btn { display: flex; }
             .case-studies-grid { grid-template-columns: 1fr; }
             .case-study-grid-results { flex-direction: column; }
             .grid-result-box { min-width: 100%; }
+            .modal-close { top: 1rem; right: 1rem; }
         }
 
         @media (max-width: 480px) {
@@ -658,27 +696,33 @@
             .hero { padding: 100px 0 50px; }
             .hero-title { font-size: 1.75rem; }
             .logo-text { font-size: 1rem; }
+            .logo-icon { width: 36px; height: 36px; font-size: 1.1rem; }
             .industry-card { padding: 1.5rem; }
-            .modal-content { padding: 1.5rem; }
+            .modal-content { padding: 1.5rem; margin: 1rem; max-height: 85vh; }
             .cta-section { padding: 2rem 1rem; }
             .case-study-header { flex-direction: column; text-align: center; }
-            .doc-btn { bottom: 1rem; right: 1rem; }
-            .mobile-back-btn { width: 90%; }
+            .mobile-back-btn { width: 90%; bottom: 1rem; }
             .case-study-grid-card { padding: 1.5rem; }
+            .stat { padding: 1rem; }
+            .stat-number { font-size: 1.5rem; }
+            .profile-stats { flex-direction: column; gap: 1rem; }
         }
 
         @media (prefers-reduced-motion: reduce) {
             * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
         }
+        
+        /* Utility for mobile menu CTA */
+        .nav-cta-mobile { display: none; }
     </style>
    <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
+  "@context": "https://schema.org ",
   "@type": "Organization",
   "name": "WorkAutoAI",
-  "url": "https://workautomationai.com/",
-  "logo": "https://workautomationai.com/photos/favicon.png",
-  "image": "https://workautomationai.com/photos/seo-banner.jpg",
+  "url": "https://workautomationai.com/ ",
+  "logo": "https://workautomationai.com/photos/favicon.png ",
+  "image": "https://workautomationai.com/photos/seo-banner.jpg ",
   "description": "AI Automation Specialist for Manufacturing, QC, and Business Operations.",
   "founder": {
     "@type": "Person",
@@ -690,25 +734,36 @@
     "contactType": "customer service"
   },
   "sameAs": [
-    "https://www.linkedin.com/in/rahulyadav",
-    "https://www.instagram.com/workautomationai"
+    "https://www.linkedin.com/in/rahulyadav ",
+    "https://www.instagram.com/workautomationai "
   ]
 }
 </script>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container nav-container">
-            <a class="logo" onclick="scrollToTop()">
+            <a class="logo" onclick="scrollToTop()" aria-label="WorkAutoAI Home">
                 <div class="logo-icon">AI</div>
                 <div class="logo-text">WorkAutoAI</div>
             </a>
-            <div class="nav-menu">
-                <a class="nav-link" onclick="scrollToSection('industries')">Solutions</a>
-                <a class="nav-link" onclick="scrollToSection('case-studies-section')">Case Studies</a>
-                <a class="nav-link" onclick="scrollToSection('about-expert')">Expert</a>
-                <a class="nav-link" onclick="scrollToSection('contact')">Contact</a>
+            
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
+                <a class="nav-link" onclick="scrollToSection('industries'); closeMobileMenu();">Solutions</a>
+                <a class="nav-link" onclick="scrollToSection('case-studies-section'); closeMobileMenu();">Case Studies</a>
+                <a class="nav-link" onclick="scrollToSection('about-expert'); closeMobileMenu();">Expert</a>
+                <a class="nav-link" onclick="scrollToSection('contact'); closeMobileMenu();">Contact</a>
+                
+                <div class="nav-cta-mobile">
+                    <button onclick="openBookingModal(); closeMobileMenu();" class="btn btn-secondary" style="width: 100%;">Book Demo</button>
+                    <button onclick="openBookingModal(); closeMobileMenu();" class="btn btn-primary" style="width: 100%;">Get Started</button>
+                </div>
             </div>
+            
             <div class="nav-cta">
                 <button onclick="openBookingModal()" class="btn btn-secondary">Book Demo</button>
                 <button onclick="openBookingModal()" class="btn btn-primary">Get Started</button>
@@ -717,7 +772,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content">
@@ -728,8 +783,8 @@
                 <h1 class="hero-title">Automate Your Business Operations with AI</h1>
                 <p class="hero-subtitle">WorkAutoAI delivers intelligent automation solutions that save 40+ hours weekly, reduce operational costs by 60%, and scale your business exponentially.</p>
                 <div class="hero-buttons">
-                    <a class="btn btn-primary btn-large" onclick="scrollToSection('case-studies-section')"><i class="fas fa-play-circle"></i> See Case Studies</a>
-                    <button onclick="openBookingModal()" class="btn btn-success btn-large"><i class="fas fa-calendar-check"></i> Free Consultation</button>
+                    <a class="btn btn-primary btn-large" onclick="scrollToSection('case-studies-section')" role="button"><i class="fas fa-play-circle"></i> See Case Studies</a>
+                    <button onclick="openBookingModal()" class="btn btn-success btn-large" role="button"><i class="fas fa-calendar-check"></i> Free Consultation</button>
                 </div>
                 <div class="hero-stats">
                     <div class="stat"><div class="stat-number">40+</div><div class="stat-label">Hours Saved Weekly</div></div>
@@ -1004,7 +1059,7 @@
                 <h2 class="cta-title">Ready to Transform Your Business with AI?</h2>
                 <p class="cta-description">Book a free 30-minute consultation to discover how WorkAutoAI can save your team 40+ hours weekly and reduce operational costs by up to 60%.</p>
                 <div class="contact-options">
-                    <a href="https://wa.me/919473798147?text=Hi%20WorkAutoAI,%20I'd%20like%20to%20learn%20more" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://wa.me/919473798147?text=Hi%20WorkAutoAI ,%20I'd%20like%20to%20learn%20more" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                     <a href="mailto:rahulsen.yadav@gmail.com" class="btn btn-email"><i class="fas fa-envelope"></i> Email</a>
                     <button onclick="openBookingModal()" class="btn btn-call"><i class="fas fa-calendar-check"></i> Book Consultation</button>
                 </div>
@@ -1020,9 +1075,9 @@
                     <h3 class="footer-heading">About WorkAutoAI</h3>
                     <p style="color: var(--gray); margin-bottom: 1.5rem;">Transforming businesses with intelligent automation solutions.</p>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/workautomationai" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/rahulyadav" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com/workautoai" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/workautomationai " class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rahulyadav " class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/workautoai " class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 <div>
@@ -1058,11 +1113,11 @@
     </footer>
 
     <!-- Manufacturing Modal -->
-    <div id="manufacturingModal" class="modal">
+    <div id="manufacturingModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="manufacturing-title">
         <button class="mobile-back-btn" onclick="closeModal('manufacturing')"><i class="fas fa-arrow-left"></i> Back</button>
         <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('manufacturing')">&times;</button>
-            <h2 class="modal-title">Manufacturing Case Studies</h2>
+            <button class="modal-close" onclick="closeModal('manufacturing')" aria-label="Close modal">&times;</button>
+            <h2 class="modal-title" id="manufacturing-title">Manufacturing Case Studies</h2>
             <div class="case-study-card">
                 <div class="case-study-header">
                     <div class="case-study-icon"><i class="fas fa-cogs"></i></div>
@@ -1098,11 +1153,11 @@
     </div>
 
     <!-- Healthcare Modal -->
-    <div id="healthcareModal" class="modal">
+    <div id="healthcareModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="healthcare-title">
         <button class="mobile-back-btn" onclick="closeModal('healthcare')"><i class="fas fa-arrow-left"></i> Back</button>
         <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('healthcare')">&times;</button>
-            <h2 class="modal-title">Healthcare Case Studies</h2>
+            <button class="modal-close" onclick="closeModal('healthcare')" aria-label="Close modal">&times;</button>
+            <h2 class="modal-title" id="healthcare-title">Healthcare Case Studies</h2>
             <div class="case-study-card">
                 <div class="case-study-header">
                     <div class="case-study-icon"><i class="fas fa-hospital"></i></div>
@@ -1138,11 +1193,11 @@
     </div>
 
     <!-- Retail Modal -->
-    <div id="retailModal" class="modal">
+    <div id="retailModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="retail-title">
         <button class="mobile-back-btn" onclick="closeModal('retail')"><i class="fas fa-arrow-left"></i> Back</button>
         <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('retail')">&times;</button>
-            <h2 class="modal-title">Retail & E-commerce Case Studies</h2>
+            <button class="modal-close" onclick="closeModal('retail')" aria-label="Close modal">&times;</button>
+            <h2 class="modal-title" id="retail-title">Retail & E-commerce Case Studies</h2>
             <div class="case-study-card">
                 <div class="case-study-header">
                     <div class="case-study-icon"><i class="fas fa-boxes"></i></div>
@@ -1178,11 +1233,11 @@
     </div>
 
     <!-- Logistics Modal -->
-    <div id="logisticsModal" class="modal">
+    <div id="logisticsModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="logistics-title">
         <button class="mobile-back-btn" onclick="closeModal('logistics')"><i class="fas fa-arrow-left"></i> Back</button>
         <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('logistics')">&times;</button>
-            <h2 class="modal-title">Logistics & Supply Chain</h2>
+            <button class="modal-close" onclick="closeModal('logistics')" aria-label="Close modal">&times;</button>
+            <h2 class="modal-title" id="logistics-title">Logistics & Supply Chain</h2>
             <div class="case-study-card">
                 <div class="case-study-header">
                     <div class="case-study-icon"><i class="fas fa-map"></i></div>
@@ -1218,11 +1273,11 @@
     </div>
 
     <!-- Finance Modal -->
-    <div id="financeModal" class="modal">
+    <div id="financeModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="finance-title">
         <button class="mobile-back-btn" onclick="closeModal('finance')"><i class="fas fa-arrow-left"></i> Back</button>
         <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('finance')">&times;</button>
-            <h2 class="modal-title">Finance & Banking Case Studies</h2>
+            <button class="modal-close" onclick="closeModal('finance')" aria-label="Close modal">&times;</button>
+            <h2 class="modal-title" id="finance-title">Finance & Banking Case Studies</h2>
             <div class="case-study-card">
                 <div class="case-study-header">
                     <div class="case-study-icon"><i class="fas fa-shield-alt"></i></div>
@@ -1258,110 +1313,79 @@
     </div>
 
     <!-- Booking Modal -->
-    <div id="bookingModal" class="modal">
+    <div id="bookingModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="booking-title">
         <button class="mobile-back-btn" onclick="closeBookingModal()"><i class="fas fa-arrow-left"></i> Back</button>
         <div class="modal-content">
-            <button class="modal-close" onclick="closeBookingModal()">&times;</button>
-            <h2 class="modal-title" style="text-align: center;">Book Your Free Consultation</h2>
+            <button class="modal-close" onclick="closeBookingModal()" aria-label="Close modal">&times;</button>
+            <h2 class="modal-title" id="booking-title" style="text-align: center;">Book Your Free Consultation</h2>
             <form class="booking-form" onsubmit="submitBooking(event)">
                 <div class="form-row">
                     <div class="form-group">
-                        <label class="form-label">Full Name *</label>
-                        <input type="text" id="b-name" class="form-input" placeholder="Your Name" required>
+                        <label class="form-label" for="b-name">Full Name *</label>
+                        <input type="text" id="b-name" class="form-input" placeholder="Your Name" required aria-required="true">
                     </div>
                     <div class="form-group">
-                        <label class="form-label">Phone Number *</label>
-                        <input type="tel" id="b-phone" class="form-input" placeholder="+91 98765 43210" required>
+                        <label class="form-label" for="b-phone">Phone Number *</label>
+                        <input type="tel" id="b-phone" class="form-input" placeholder="+91 98765 43210" required aria-required="true" pattern="[0-9+\s()-]+">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <label class="form-label">Business Type</label>
-                        <select id="b-type" class="form-select">
-                            <option>Manufacturing</option>
-                            <option>Healthcare</option>
-                            <option>Retail</option>
-                            <option>Logistics</option>
-                            <option>Finance</option>
+                        <label class="form-label" for="b-type">Business Type</label>
+                        <select id="b-type" class="form-select" aria-label="Select business type">
+                            <option value="Manufacturing">Manufacturing</option>
+                            <option value="Healthcare">Healthcare</option>
+                            <option value="Retail">Retail</option>
+                            <option value="Logistics">Logistics</option>
+                            <option value="Finance">Finance</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label class="form-label">Contact Method</label>
-                        <select id="b-method" class="form-select">
-                            <option>WhatsApp</option>
-                            <option>Email</option>
-                            <option>Phone</option>
+                        <label class="form-label" for="b-method">Contact Method</label>
+                        <select id="b-method" class="form-select" aria-label="Select contact method">
+                            <option value="WhatsApp">WhatsApp</option>
+                            <option value="Email">Email</option>
+                            <option value="Phone">Phone</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="form-label">What do you want to automate? *</label>
-                    <textarea id="b-msg" class="form-textarea" rows="3" placeholder="Describe your needs..." required></textarea>
+                    <label class="form-label" for="b-msg">What do you want to automate? *</label>
+                    <textarea id="b-msg" class="form-textarea" rows="3" placeholder="Describe your needs..." required aria-required="true"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary" style="width: 100%;">Send Via WhatsApp <i class="fab fa-whatsapp"></i></button>
             </form>
         </div>
     </div>
 
-    <!-- Documentation Button & Panel -->
-    <button class="doc-btn" onclick="toggleDoc()"><i class="fas fa-book"></i></button>
-    
-    <div class="doc-panel" id="docPanel">
-        <button class="doc-close" onclick="toggleDoc()"><i class="fas fa-times"></i></button>
-        
-        <h2 class="doc-title">📖 Documentation</h2>
-        
-        <div class="doc-subtitle">✅ WHAT'S INCLUDED</div>
-        <ul class="doc-list">
-            <li>✨ All bugs fixed</li>
-            <li>📊 6 complete case studies section</li>
-            <li>📱 Mobile back buttons added</li>
-            <li>🔍 Form dropdowns fixed</li>
-            <li>⚡ Ready for deployment</li>
-        </ul>
-
-        <div class="doc-subtitle">🐛 BUGS FIXED</div>
-        <ul class="doc-list">
-            <li>✅ Case studies section added and visible</li>
-            <li>✅ Form dropdown visibility fixed</li>
-            <li>✅ Mobile back navigation added</li>
-            <li>✅ 6 real case studies with metrics</li>
-            <li>✅ Mobile responsive design</li>
-        </ul>
-
-        <div class="doc-subtitle">📊 6 CASE STUDIES ADDED</div>
-        <p class="doc-text"><strong>1. Die Casting QC Automation:</strong> 95% time saved, 92% defect detection</p>
-        <p class="doc-text"><strong>2. Smart Healthcare System:</strong> 40% no-show reduction, 89% error reduction</p>
-        <p class="doc-text"><strong>3. Retail AI Inventory:</strong> 85% stockout reduction, 78% queries automated</p>
-        <p class="doc-text"><strong>4. Logistics Optimization:</strong> 28% fuel savings, 60% throughput increase</p>
-        <p class="doc-text"><strong>5. Finance Fraud Detection:</strong> 96% accuracy, ₹15Cr fraud prevention</p>
-        <p class="doc-text"><strong>6. E-commerce AI Chatbot:</strong> 80% queries automated, 92% inventory accuracy</p>
-
-        <div class="doc-subtitle">📱 MOBILE FIXES</div>
-        <ul class="doc-list">
-            <li>✅ Back button in all modals (mobile only)</li>
-            <li>✅ Form dropdowns visible on all devices</li>
-            <li>✅ Better touch targets for mobile</li>
-            <li>✅ Improved navigation menu</li>
-            <li>✅ Fixed viewport issues</li>
-        </ul>
-
-        <div class="doc-subtitle">📞 SUPPORT</div>
-        <p class="doc-text">Email: rahulsen.yadav@gmail.com</p>
-        <p class="doc-text">WhatsApp: +91 9473798147</p>
-        <p class="doc-text">Hours: Mon-Fri 9AM-6PM IST</p>
-
-        <div class="doc-subtitle">📈 NEXT STEPS</div>
-        <ul class="doc-list">
-            <li>Setup Google Analytics</li>
-            <li>Submit to Search Console</li>
-            <li>Update contact info</li>
-            <li>Deploy to hosting</li>
-            <li>Monitor conversions</li>
-        </ul>
-    </div>
-
     <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const toggleBtn = document.querySelector('.mobile-menu-toggle');
+            navMenu.classList.toggle('active');
+            
+            const isExpanded = navMenu.classList.contains('active');
+            toggleBtn.setAttribute('aria-expanded', isExpanded);
+            toggleBtn.innerHTML = isExpanded ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        }
+        
+        function closeMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const toggleBtn = document.querySelector('.mobile-menu-toggle');
+            navMenu.classList.remove('active');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            toggleBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+
+        // Close mobile menu on resize if open
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+
+        // Scroll handler for navbar
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
@@ -1383,51 +1407,57 @@
         }
 
         function openModal(id) {
-            document.getElementById(id + 'Modal').classList.add('active');
+            const modal = document.getElementById(id + 'Modal');
+            modal.classList.add('active');
             document.body.style.overflow = 'hidden';
             
-            // Show mobile back button
-            if (window.innerWidth <= 768) {
-                const modal = document.getElementById(id + 'Modal');
-                const mobileBackBtn = modal.querySelector('.mobile-back-btn');
-                if (mobileBackBtn) {
-                    mobileBackBtn.style.display = 'flex';
-                }
+            // Trap focus in modal for accessibility
+            const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+            if (focusableElements.length) {
+                focusableElements[0].focus();
             }
         }
 
         function closeModal(id) {
-            document.getElementById(id + 'Modal').classList.remove('active');
-            document.body.style.overflow = 'auto';
+            const modal = document.getElementById(id + 'Modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
         }
 
+        // Close modal on backdrop click
         window.onclick = function(e) {
             if (e.target.classList.contains('modal')) {
-                const modals = document.querySelectorAll('.modal.active');
-                modals.forEach(modal => {
-                    modal.classList.remove('active');
-                });
-                document.body.style.overflow = 'auto';
+                e.target.classList.remove('active');
+                document.body.style.overflow = '';
             }
         }
 
-        function openBookingModal() {
-            document.getElementById('bookingModal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-            
-            // Show mobile back button
-            if (window.innerWidth <= 768) {
-                const modal = document.getElementById('bookingModal');
-                const mobileBackBtn = modal.querySelector('.mobile-back-btn');
-                if (mobileBackBtn) {
-                    mobileBackBtn.style.display = 'flex';
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const activeModal = document.querySelector('.modal.active');
+                if (activeModal) {
+                    activeModal.classList.remove('active');
+                    document.body.style.overflow = '';
                 }
             }
+        });
+
+        function openBookingModal() {
+            const modal = document.getElementById('bookingModal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Focus first input
+            setTimeout(() => {
+                document.getElementById('b-name').focus();
+            }, 100);
         }
 
         function closeBookingModal() {
-            document.getElementById('bookingModal').classList.remove('active');
-            document.body.style.overflow = 'auto';
+            const modal = document.getElementById('bookingModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
         }
 
         function submitBooking(e) {
@@ -1436,13 +1466,12 @@
             const phone = document.getElementById('b-phone').value;
             const type = document.getElementById('b-type').value;
             const msg = document.getElementById('b-msg').value;
-            const whatsappMsg = `*Consultation Request*%0AName: ${name}%0APhone: ${phone}%0AIndustry: ${type}%0ANeeds: ${msg}`;
+            const whatsappMsg = `*Consultation Request*%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AIndustry: ${encodeURIComponent(type)}%0ANeeds: ${encodeURIComponent(msg)}`;
             window.open(`https://wa.me/919473798147?text=${whatsappMsg}`, '_blank');
             closeBookingModal();
-        }
-
-        function toggleDoc() {
-            document.getElementById('docPanel').classList.toggle('open');
+            
+            // Reset form
+            e.target.reset();
         }
     </script>
 </body>
