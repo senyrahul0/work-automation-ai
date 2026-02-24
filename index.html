@@ -481,6 +481,7 @@
         }
 
         .modal-title { font-size: 2.2rem; margin-bottom: 1rem; color: white; }
+        .modal-description { color: var(--gray); margin-bottom: 2rem; line-height: 1.8; }
 
         /* Footer */
         .footer {
@@ -489,13 +490,79 @@
             border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-heading { font-size: 1.1rem; margin-bottom: 1.5rem; color: white; font-weight: 700; }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { color: var(--gray); text-decoration: none; transition: var(--transition); cursor: pointer; display: inline-block; padding: 0.25rem 0; }
+        .footer-links a:hover { color: var(--primary); }
+
+        .social-links { display: flex; gap: 1rem; margin-top: 1.5rem; }
+        .social-link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover { background: var(--primary); color: white; transform: translateY(-3px); }
         .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.05); color: var(--gray); font-size: 0.9rem; }
 
+        /* Form */
+        .booking-form { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+        .form-group { text-align: left; }
+        .form-label { display: block; margin-bottom: 0.5rem; color: var(--light); font-weight: 500; }
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: white;
+            font-family: 'Outfit', sans-serif;
+            font-size: 16px;
+            min-height: 44px;
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+
+        /* Mobile Menu */
         @media (max-width: 768px) {
             .mobile-menu-toggle { display: block; }
-            .nav-menu { display: none; }
+            .nav-menu { 
+                display: none; 
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: rgba(7, 10, 28, 0.98);
+                flex-direction: column;
+                padding: 2rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                gap: 1.5rem;
+            }
+            .nav-menu.active { display: flex; }
             .nav-cta { display: none; }
             .hero-title { font-size: 2rem; }
+            .industries-grid { grid-template-columns: 1fr; }
+            .about { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -512,10 +579,10 @@
             </button>
             
             <div class="nav-menu" id="navMenu">
-                <a class="nav-link" onclick="scrollToSection('industries');">Solutions</a>
-                <a class="nav-link" onclick="scrollToSection('case-studies-section');">Case Studies</a>
-                <a class="nav-link" onclick="scrollToSection('about-expert');">Expert</a>
-                <a class="nav-link" onclick="scrollToSection('contact');">Contact</a>
+                <a class="nav-link" onclick="scrollToSection('industries')">Solutions</a>
+                <a class="nav-link" onclick="scrollToSection('case-studies-section')">Case Studies</a>
+                <a class="nav-link" onclick="scrollToSection('about-expert')">Expert</a>
+                <a class="nav-link" onclick="scrollToSection('contact')">Contact</a>
             </div>
             
             <div class="nav-cta">
@@ -553,30 +620,42 @@
         <div class="container">
             <div class="section-header">
                 <div class="section-subtitle">PROVEN RESULTS</div>
-                <h2 class="section-title">Real-World AI Automation Success Stories</h2>
-                <p class="section-description">See how businesses achieve remarkable results with our custom AI automation solutions.</p>
+                <h2 class="section-title">6 Real-World AI Automation Success Stories</h2>
+                <p class="section-description">See how businesses across industries achieved remarkable results with our custom AI automation solutions.</p>
             </div>
+            
             <div class="case-studies-grid">
                 <div class="case-study-grid-card">
                     <div class="case-study-grid-icon"><i class="fas fa-industry"></i></div>
                     <span class="case-study-grid-industry">Manufacturing</span>
-                    <h3>Die Casting QC Automation</h3>
-                    <p class="case-study-grid-description">Automated visual inspection system for automotive die-cast parts, saving 95% inspection time.</p>
+                    <h3>Die Casting Quality Control Automation</h3>
+                    <p class="case-study-grid-description">Automated visual inspection system for automotive die-cast parts, replacing manual QC.</p>
                     <div class="case-study-grid-results">
                         <div class="grid-result-box"><div class="grid-result-number">95%</div><div class="grid-result-label">Time Saved</div></div>
+                        <div class="grid-result-box"><div class="grid-result-number">₹45L</div><div class="grid-result-label">Savings</div></div>
                     </div>
-                    <button class="btn btn-secondary" onclick="openModal('manufacturing')">View Details</button>
                 </div>
-                
+
                 <div class="case-study-grid-card">
                     <div class="case-study-grid-icon"><i class="fas fa-hospital"></i></div>
                     <span class="case-study-grid-industry">Healthcare</span>
-                    <h3>Smart Appointment System</h3>
-                    <p class="case-study-grid-description">AI scheduling reduced no-shows by 40% and automated medical billing.</p>
+                    <h3>Smart Appointment & Billing System</h3>
+                    <p class="case-study-grid-description">AI scheduling with automated reminders reduced no-shows by 40%.</p>
                     <div class="case-study-grid-results">
-                        <div class="grid-result-box"><div class="grid-result-number">40%</div><div class="grid-result-label">No-shows ↓</div></div>
+                        <div class="grid-result-box"><div class="grid-result-number">40%</div><div class="grid-result-label">No-show ↓</div></div>
+                        <div class="grid-result-box"><div class="grid-result-number">89%</div><div class="grid-result-label">Error ↓</div></div>
                     </div>
-                    <button class="btn btn-secondary" onclick="openModal('healthcare')">View Details</button>
+                </div>
+
+                <div class="case-study-grid-card">
+                    <div class="case-study-grid-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <span class="case-study-grid-industry">Retail</span>
+                    <h3>AI Inventory & Customer Service</h3>
+                    <p class="case-study-grid-description">ML demand forecasting reduced stockouts by 85% and automated 78% queries.</p>
+                    <div class="case-study-grid-results">
+                        <div class="grid-result-box"><div class="grid-result-number">85%</div><div class="grid-result-label">Stockout ↓</div></div>
+                        <div class="grid-result-box"><div class="grid-result-number">₹3.5Cr</div><div class="grid-result-label">Savings</div></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -615,12 +694,29 @@
         </div>
     </footer>
 
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+            <h2 style="text-align: center;">Book Consultation</h2>
+            <form class="booking-form" onsubmit="submitBooking(event)">
+                <input type="text" id="b-name" class="form-input" placeholder="Your Name" required>
+                <input type="tel" id="b-phone" class="form-input" placeholder="Phone" required>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
     <script>
         function toggleMobileMenu() { document.getElementById('navMenu').classList.toggle('active'); }
         function scrollToSection(id) { document.getElementById(id).scrollIntoView({behavior: 'smooth'}); }
         function scrollToTop() { window.scrollTo({top: 0, behavior: 'smooth'}); }
         function openBookingModal() { document.getElementById('bookingModal').classList.add('active'); }
         function closeBookingModal() { document.getElementById('bookingModal').classList.remove('active'); }
+        function submitBooking(e) {
+            e.preventDefault();
+            const msg = `Consultation Request from ${document.getElementById('b-name').value}`;
+            window.open(`https://wa.me/919473798147?text=${encodeURIComponent(msg)}`, '_blank');
+        }
     </script>
 
     <script>
@@ -649,5 +745,5 @@
         };
       })(document, "script", "vapi-sdk");
     </script>
-    </body>
+</body>
 </html>
