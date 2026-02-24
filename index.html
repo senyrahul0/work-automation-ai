@@ -11,11 +11,6 @@
     <meta name="author" content="WorkAutoAI - Rahul Yadav">
     <link rel="canonical" href="https://workautomationai.com/">
     
-    <meta property="og:title" content="WorkAutoAI - Save 40+ Hours Weekly with AI Automation">
-    <meta property="og:description" content="50+ businesses trust WorkAutoAI. Save time, cut costs 60%, automate QC & reporting.">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    
     <link rel="icon" type="image/png" href="photos/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -31,126 +26,147 @@
             --light: #F8FAFC;
             --gray: #94A3B8;
             --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
+            --gradient-secondary: linear-gradient(135deg, #00D68F 0%, #00E6C3 100%);
+            --shadow-xl: 0 25px 50px rgba(0, 102, 255, 0.25);
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
         body { font-family: 'Outfit', sans-serif; background-color: var(--darker); color: var(--light); line-height: 1.6; overflow-x: hidden; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Sora', sans-serif; font-weight: 700; line-height: 1.2; }
         .container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
 
         /* Navbar */
-        .navbar { position: fixed; top: 0; left: 0; width: 100%; padding: 1rem 0; background: rgba(7, 10, 28, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); z-index: 1000; }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; }
-        .logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; cursor: pointer; }
-        .logo-icon { width: 42px; height: 42px; background: var(--gradient-primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 800; color: white; }
+        .navbar { position: fixed; top: 0; left: 0; width: 100%; padding: 1rem 0; background: rgba(7, 10, 28, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); z-index: 1000; transition: var(--transition); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; gap: 2rem; }
+        .logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; flex-shrink: 0; cursor: pointer; }
+        .logo-icon { width: 42px; height: 42px; background: var(--gradient-primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 800; color: white; box-shadow: var(--shadow-xl); }
         .logo-text { font-size: 1.4rem; font-weight: 800; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .nav-menu { display: flex; gap: 2rem; flex: 1; align-items: center; }
+        .nav-link { color: var(--gray); text-decoration: none; font-weight: 500; transition: var(--transition); cursor: pointer; }
+        .nav-link:hover { color: white; }
 
-        /* Buttons */
-        .btn { padding: 0.7rem 1.5rem; border-radius: 12px; font-weight: 600; cursor: pointer; border: none; transition: var(--transition); display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .btn { padding: 0.7rem 1.5rem; border-radius: 12px; font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; transition: var(--transition); cursor: pointer; border: none; }
         .btn-primary { background: var(--gradient-primary); color: white; }
         .btn-secondary { background: transparent; color: white; border: 2px solid rgba(255, 255, 255, 0.2); }
         .btn-success { background: var(--gradient-secondary); color: white; }
 
         /* Hero */
-        .hero { padding: 160px 0 100px; text-align: center; }
-        .hero-title { font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 1.5rem; color: white; }
-        .hero-subtitle { font-size: 1.25rem; color: var(--gray); margin-bottom: 2.5rem; max-width: 700px; margin: 0 auto 2.5rem; }
-        
+        .hero { padding: 160px 0 100px; position: relative; }
+        .hero-content { max-width: 800px; text-align: center; margin: 0 auto; }
+        .hero-title { font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 1.5rem; background: linear-gradient(to right, #FFFFFF, #B8D4FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-subtitle { font-size: 1.25rem; color: var(--gray); margin-bottom: 2.5rem; }
+
         .hero-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; margin-top: 3rem; }
         .stat { padding: 1.5rem; background: rgba(255, 255, 255, 0.03); border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05); }
         .stat-number { font-size: 2rem; font-weight: 800; color: var(--primary); }
 
-        /* Section Styles */
+        /* Section Header */
         .section { padding: 80px 0; }
         .section-header { text-align: center; margin-bottom: 4rem; }
-        .case-studies-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem; }
-        .case-study-grid-card { background: rgba(30, 41, 59, 0.6); border-radius: 20px; padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.08); text-align: left; }
+        .section-title { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; color: white; }
+
+        /* Industries Grid */
+        .industries-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; }
+        .industry-card { background: rgba(30, 41, 59, 0.4); border-radius: 20px; padding: 2.5rem; border: 1px solid rgba(255, 255, 255, 0.08); transition: var(--transition); }
+        .industry-card:hover { transform: translateY(-8px); border-color: var(--primary); }
+
+        /* Case Studies */
+        .case-studies-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .case-study-grid-card { background: rgba(30, 41, 59, 0.6); border-radius: 20px; padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.08); }
 
         /* Footer */
-        .footer { padding: 4rem 0 2rem; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center; color: var(--gray); }
+        .footer { background: rgba(7, 10, 28, 0.95); padding: 4rem 0 2rem; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center; }
 
-        /* Modals & Forms */
+        /* Modals */
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(7, 10, 28, 0.98); z-index: 2000; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; }
         .modal.active { display: flex; opacity: 1; }
-        .modal-content { background: rgba(30, 41, 59, 0.95); border-radius: 20px; padding: 3rem; max-width: 800px; width: 90%; position: relative; }
-        .modal-close { position: absolute; top: 1rem; right: 1rem; font-size: 2rem; color: white; cursor: pointer; background: none; border: none; }
-        
-        .booking-form { display: flex; flex-direction: column; gap: 1.5rem; }
-        .form-input { width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; color: white; }
+        .modal-content { background: rgba(30, 41, 59, 0.95); border-radius: 20px; padding: 3rem; max-width: 1000px; width: 100%; position: relative; max-height: 90vh; overflow-y: auto; }
+        .modal-close { position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; color: var(--gray); font-size: 2rem; cursor: pointer; }
 
         @media (max-width: 768px) {
-            .hero-title { font-size: 2rem; }
-            .nav-cta { display: none; }
+            .nav-menu, .nav-cta { display: none; }
+            .hero-title { font-size: 2.2rem; }
         }
     </style>
 </head>
 <body>
-
     <nav class="navbar">
         <div class="container nav-container">
             <a class="logo" onclick="scrollToTop()">
                 <div class="logo-icon">AI</div>
                 <div class="logo-text">WorkAutoAI</div>
             </a>
+            <div class="nav-menu">
+                <a class="nav-link" onclick="scrollToSection('industries')">Solutions</a>
+                <a class="nav-link" onclick="scrollToSection('case-studies-section')">Case Studies</a>
+                <a class="nav-link" onclick="scrollToSection('contact')">Contact</a>
+            </div>
             <div class="nav-cta">
-                <button onclick="openBookingModal()" class="btn btn-secondary">Book Demo</button>
                 <button onclick="openBookingModal()" class="btn btn-primary">Get Started</button>
             </div>
         </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="container">
-            <h1 class="hero-title">Automate Your Business Operations with AI</h1>
-            <p class="hero-subtitle">Save 40+ hours weekly and reduce operational costs by 60% with custom AI Agents built for your industry.</p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="scrollToSection('case-studies')">See Case Studies</button>
-                <button onclick="openBookingModal()" class="btn btn-success">Free Consultation</button>
-            </div>
-            <div class="hero-stats">
-                <div class="stat"><div class="stat-number">40+</div><div>Hours Saved</div></div>
-                <div class="stat"><div class="stat-number">60%</div><div>Cost Reduction</div></div>
-                <div class="stat"><div class="stat-number">24/7</div><div>AI Support</div></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Automate Your Business Operations with AI</h1>
+                <p class="hero-subtitle">WorkAutoAI delivers intelligent automation solutions that save 40+ hours weekly and reduce operational costs by 60%.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('case-studies-section')">See Case Studies</button>
+                    <button onclick="openBookingModal()" class="btn btn-success">Free Consultation</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><div class="stat-number">40+</div><div>Hours Saved</div></div>
+                    <div class="stat"><div class="stat-number">60%</div><div>Cost Reduction</div></div>
+                    <div class="stat"><div class="stat-number">95%</div><div>Accuracy</div></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="case-studies" class="section">
+    <section id="case-studies-section" class="section">
         <div class="container">
             <div class="section-header">
-                <h2>AI Automation Success Stories</h2>
+                <h2 class="section-title">AI Automation Success Stories</h2>
             </div>
             <div class="case-studies-grid">
                 <div class="case-study-grid-card">
                     <h3>Die Casting QC Automation</h3>
-                    <p>95% inspection time saved using AI-powered visual detection for automotive parts.</p>
-                    <button class="btn btn-secondary" style="margin-top: 1rem;">Learn More</button>
+                    <p>Automated visual inspection system for automotive parts. Saves 95% inspection time.</p>
+                    <button class="btn btn-secondary" onclick="openModal('manufacturing')">View Details</button>
                 </div>
-                <div class="case-study-grid-card">
-                    <h3>Healthcare Scheduling</h3>
-                    <p>40% reduction in patient no-shows with automated AI appointment agents.</p>
-                    <button class="btn btn-secondary" style="margin-top: 1rem;">Learn More</button>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div style="background: var(--gradient-primary); padding: 4rem; border-radius: 20px; text-align: center;">
+                <h2>Ready to scale with AI?</h2>
+                <p>Book your 30-minute free consultation today.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/919473798147" class="btn btn-secondary" style="background: white; color: var(--primary);">Contact Rahul via WhatsApp</a>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 WorkAutoAI by Rahul Yadav. All rights reserved.</p>
-        </div>
+        <div class="container"><p>&copy; 2026 WorkAutoAI. All rights reserved.</p></div>
     </footer>
 
     <div id="bookingModal" class="modal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeBookingModal()">&times;</button>
-            <h2 style="margin-bottom: 1.5rem;">Schedule Your Demo</h2>
-            <form class="booking-form" onsubmit="submitBooking(event)">
-                <input type="text" id="b-name" class="form-input" placeholder="Your Name" required>
-                <input type="tel" id="b-phone" class="form-input" placeholder="Phone Number" required>
-                <textarea id="b-msg" class="form-input" rows="3" placeholder="What would you like to automate?"></textarea>
-                <button type="submit" class="btn btn-primary">Submit via WhatsApp</button>
+            <h2>Book Your Consultation</h2>
+            <form style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;">
+                <input type="text" placeholder="Your Name" style="padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                <input type="tel" placeholder="Phone Number" style="padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                <button type="submit" class="btn btn-primary">Submit Request</button>
             </form>
         </div>
     </div>
@@ -160,13 +176,6 @@
         function scrollToTop() { window.scrollTo({top: 0, behavior: 'smooth'}); }
         function openBookingModal() { document.getElementById('bookingModal').classList.add('active'); }
         function closeBookingModal() { document.getElementById('bookingModal').classList.remove('active'); }
-        function submitBooking(e) {
-            e.preventDefault();
-            const name = document.getElementById('b-name').value;
-            const phone = document.getElementById('b-phone').value;
-            const msg = `Hi Rahul, I am ${name}. I want to automate: ${document.getElementById('b-msg').value}`;
-            window.open(`https://wa.me/919473798147?text=${encodeURIComponent(msg)}`, '_blank');
-        }
     </script>
 
     <script>
